@@ -1,0 +1,783 @@
+/* Bellow 1712px */
+@media (max-width: 107em) {
+  .bg-rectangle {
+    display: none;
+  }
+}
+
+/* Bellow 1344px (Smaller desktops) */
+@media (max-width: 84em) {
+  .section__company-logos .grid-cols-4 {
+    column-gap: unset;
+  }
+
+  .company-value__left-col {
+    margin-left: 6rem;
+  }
+
+  .section__value .grid-cols-2 {
+    grid-template-columns: 50rem 1fr;
+    column-gap: 5rem;
+  }
+
+  .value-container-left-home {
+    width: 40rem;
+  }
+
+  .value__text,
+  .section__value .list__item {
+    width: auto;
+  }
+
+  .company__icon {
+    height: 12.6rem;
+    width: 100%;
+  }
+
+  .container {
+    max-width: 100rem;
+  }
+
+  .section__navbar .container {
+    max-width: 120rem;
+    margin: 0 4rem;
+  }
+
+  /* About page */
+  .media-with-borders .media__description {
+    margin: 0 auto 2rem;
+    height: unset;
+  }
+
+  .section__company-value .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .section__services-with-borders {
+    margin-bottom: 6.4rem;
+  }
+
+  .value-container-left {
+    width: 60rem;
+    margin: 0 auto;
+  }
+
+  .value-dark__container {
+    max-width: 64rem;
+    margin: 0 auto;
+    padding-left: 0;
+  }
+
+  .section__company-value .value__title {
+    margin-top: 6.4rem;
+  }
+
+  .our-team__title {
+    margin-top: 6.4rem;
+  }
+
+  .green__rectangle {
+    width: unset;
+  }
+
+  .section__our-team {
+    margin-bottom: 1.6rem;
+  }
+
+  .about-page__company-logo {
+    padding-bottom: 2rem;
+  }
+
+  .our-team-card__img {
+    height: 30rem;
+  }
+
+  /* Services single page */
+  .financial__bg-rectangle {
+    display: none;
+  }
+
+  .financial__company-value .company-value__left-col {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .financial__company-value {
+    margin-bottom: 6.4rem;
+  }
+
+  .section__solutions .container {
+    padding: 6.4rem 0;
+  }
+
+  .section__solutions {
+    height: unset;
+  }
+
+  .comment__container {
+    width: unset;
+    height: unset;
+  }
+
+  .popular__rectangle {
+    width: 81.5%;
+  }
+
+  /* News single page */
+  .news__container {
+    max-width: 100rem;
+  }
+}
+
+/* Bellow 1024px (Laptops) */
+@media (max-width: 64em) {
+  .container {
+    max-width: 64rem;
+  }
+
+  .about-our-company .text-col {
+    order: -1;
+    margin-bottom: 2.4rem;
+    margin-left: unset;
+  }
+
+  .section__company-value .value__title {
+    margin-bottom: 3.2rem;
+  }
+
+  .about-our-company__title {
+    margin-bottom: 2.4rem;
+  }
+
+  .value-container-left-home {
+    width: unset;
+  }
+
+  h3 {
+    font-size: 3.6rem;
+  }
+
+  .services-with-border__title {
+    margin-bottom: 3.2rem;
+  }
+
+  .hero {
+    padding-bottom: 10rem;
+    padding-top: 10rem;
+  }
+
+  .hero__title,
+  h1 {
+    font-size: 6.2rem;
+    line-height: 6rem;
+  }
+
+  .hero .btn {
+    margin: 31px 12px 0 0;
+  }
+
+  .statistics__title,
+  .statistics__text {
+    grid-column: 1 / -1;
+    padding-right: 30px;
+  }
+
+  .statistics__title {
+    font-size: 4.4rem;
+  }
+
+  .section__statistics .grid {
+    row-gap: 3.2rem;
+  }
+
+  .statistic__count {
+    font-size: 5.2rem;
+  }
+
+  .section__value {
+    height: auto;
+    padding-bottom: 5.8rem;
+  }
+
+  .company-value__left-col {
+    grid-column: 1 / -1;
+    margin-left: 0;
+  }
+
+  .value__img-col {
+    grid-column: 1 / -1;
+    height: 45rem;
+  }
+
+  .value-container {
+    margin: 0 auto;
+    max-width: 64rem;
+    padding-top: 0;
+  }
+
+  .value-container-left {
+    width: auto;
+  }
+
+  .value__title {
+    margin-bottom: 3.2rem;
+  }
+
+  .section__value .list--tick {
+    margin-bottom: 0;
+  }
+
+  .section__value .btn {
+    margin-bottom: 6.4rem;
+  }
+
+  .business__text__col {
+    grid-column: 1 / -1;
+  }
+
+  .video__col {
+    grid-column: 1 / -1;
+  }
+
+  .section__business-solutions .container {
+    position: unset;
+  }
+
+  .business__text__col {
+    padding: 6.5rem 6.6rem 6.8rem;
+  }
+
+  .section__statistics {
+    padding-top: 0;
+    padding-bottom: 3.2rem;
+  }
+
+  .section__business-solutions {
+    height: auto;
+    margin-bottom: 6.4rem;
+  }
+
+  .services__title {
+    margin-top: 5.8rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .section__services .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section__cutomers-trust {
+    margin-top: 6.4rem;
+  }
+
+  .customers-trust__title {
+    font-size: 4.4rem;
+    margin-top: 6.4rem;
+  }
+
+  .section__cutomers-trust .d--flex {
+    width: 64rem;
+    margin: 0 auto;
+    height: 50rem;
+  }
+
+  .section__testimonial .container {
+    height: 40.5rem;
+    padding: 0 4.8rem;
+  }
+
+  .quote {
+    font-size: 2.4rem;
+  }
+
+  .section__testimonial .quote {
+    margin-bottom: 4.8rem;
+  }
+
+  .section__company-logos .grid-cols-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .news__title {
+    margin-top: 6.4rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .section__recent-news .grid-cols-3 {
+    grid-template-columns: 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .card__img {
+    max-width: unset;
+  }
+
+  .section__recent-news,
+  .contact-us__description,
+  .section__contact-us .btn {
+    margin-bottom: 6.4rem;
+  }
+
+  .section__contact-us .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-us__title {
+    margin-top: 6.4rem;
+    font-size: 3.6rem;
+  }
+
+  .section__footer .grid-cols-4 {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+  }
+
+  .section__footer .pad-bot {
+    padding-bottom: 6.4rem;
+  }
+
+  .section__footer .pad-top {
+    padding-top: 6.4rem;
+  }
+
+  .copyright__text {
+    margin-top: 2.4rem;
+    margin-bottom: 2.4rem;
+  }
+
+  .section__footer .grid-cols-4 {
+    row-gap: 3.2rem;
+  }
+
+  .footer__link .list__item {
+    margin-bottom: 1.6rem;
+  }
+
+  footer .brand__description {
+    margin-bottom: 1.6rem;
+  }
+
+  footer h4 {
+    margin-bottom: 2rem;
+  }
+
+  /* About page */
+  .page__header {
+    height: 30rem;
+  }
+
+  .about-our-company .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .section__services-with-borders .grid-cols-3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-our-company {
+    margin-bottom: 6.4rem;
+  }
+
+  .section__services-with-borders,
+  .section__company-value .btn {
+    margin-bottom: 6.4rem;
+  }
+
+  .section__company-value .value__title {
+    margin-top: 6.4rem;
+  }
+
+  .section__our-team .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .our-team-card__img {
+    max-width: unset;
+  }
+
+  .green__rectangle {
+    margin-bottom: 4.8rem;
+  }
+
+  .company-value__left-col {
+    margin: 0 auto;
+    width: 64rem;
+  }
+
+  /* Service single page */
+  .financial-container {
+    width: 64rem;
+    margin: 0 auto;
+  }
+
+  .financial__company-value .grid-cols-2 {
+    row-gap: 6.4rem;
+  }
+
+  .section__solutions .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .solutions__text-col {
+    max-width: unset;
+    order: -1;
+  }
+
+  .section__solutions {
+    margin-bottom: 6.4rem;
+  }
+
+  .services_page__services .services__title {
+    margin-bottom: 6.4rem;
+  }
+
+  .section__client-says .grid-cols-2 {
+    grid-template-columns: 1fr;
+    row-gap: 3.2rem;
+  }
+
+  .client-says__title {
+    margin-bottom: 6.4rem;
+  }
+
+  .section__client-says {
+    padding-bottom: 6.4rem;
+    padding-top: 6.4rem;
+  }
+
+  .section__financ-our-pricing .container {
+    max-width: unset;
+    margin: 0 3rem;
+  }
+
+  /* News page */
+  .section__news-cards .grid-cols-3 {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 6.4rem;
+  }
+
+  .section__pagination {
+    margin-top: 6.4rem;
+    margin-bottom: 6.4rem;
+  }
+
+  .section__pagination .d--flex {
+    justify-content: center;
+  }
+
+  .pagination--btn {
+    padding: 1rem 1.4rem;
+  }
+
+  /* News single page */
+  .news__container {
+    max-width: 64rem;
+  }
+
+  .news-single__header {
+    margin-left: unset;
+  }
+
+  .news-single__title {
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+  }
+
+  /* Pricing table page */
+  .section__first-offer .container,
+  .section__second-offer .container {
+    max-width: unset;
+  }
+
+  .section__third-offer .grid-cols-4 {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2.4rem;
+    row-gap: 3.2rem;
+  }
+
+  .section__first-offer,
+  .section__second-offer,
+  .section__third-offer {
+    margin-bottom: 6.4rem;
+  }
+
+  .section__second-offer .section--title,
+  .section__third-offer .section--title {
+    margin-bottom: 3.2rem;
+  }
+
+  /* Contacts page */
+  .section__contact {
+    margin-top: unset;
+    margin-bottom: unset;
+  }
+
+  .contact-info__col,
+  .contact-form__col {
+    grid-column: 1 / -1;
+  }
+
+  .contact-form__input {
+    padding-right: 1.7rem;
+  }
+}
+
+/* Bellow 768px (Tablets) */
+@media (max-width: 48em) {
+  .hero__title,
+  h1 {
+    font-size: 4.4rem;
+    text-align: center;
+    line-height: 4.4rem;
+  }
+
+  .container {
+    width: unset;
+    margin: 0 auto;
+  }
+
+  .section__cutomers-trust .d--flex {
+    width: unset;
+  }
+
+  .hero__text {
+    text-align: center;
+  }
+
+  .section__hero .d--flex {
+    justify-content: center;
+  }
+
+  section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  /* About page */
+  .section__services-with-borders .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .about-our-company .text-col {
+    margin-left: unset;
+  }
+
+  .about-our-company .absolute-container {
+    position: unset;
+    width: unset;
+  }
+
+  .company-value__left-col,
+  .value-container-left,
+  .value__text,
+  .value__title {
+    width: unset;
+  }
+
+  .value-dark__container {
+    padding: 0 4rem;
+  }
+
+  .team__card {
+    margin-right: unset;
+  }
+
+  /* Service single page */
+  .section__financ-our-pricing .grid-cols-3,
+  .section__first-offer .grid-cols-3,
+  .section__second-offer .grid-cols-3 {
+    grid-template-columns: 1fr;
+    grid-gap: 3.8rem;
+  }
+
+  .section__financ-our-pricing .container {
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+
+  .section__financ-our-pricing {
+    padding-bottom: 6.4rem;
+  }
+
+  .section__financ-our-pricing .our-pricing__title {
+    margin-bottom: 4.8rem;
+  }
+
+  .financial-container {
+    width: unset;
+  }
+
+  /* News page */
+  .section__news-cards .grid-cols-3 {
+    grid-template-columns: 1fr;
+    row-gap: 6.4rem;
+  }
+
+  .card .d--flex {
+    margin-bottom: 1.6rem;
+  }
+
+  .section__news-cards {
+    margin-top: unset;
+  }
+
+  .section__news-single {
+    margin-top: unset;
+    margin-bottom: 6.4rem;
+  }
+
+  /* News single page */
+  .news-single__img {
+    height: 45rem;
+  }
+
+  /* FAQ page */
+  .first-topic .faq__col:last-child,
+  .second-topic .faq__col:last-child {
+    margin-bottom: 6.4rem;
+  }
+
+  .section__faq {
+    margin-top: unset;
+  }
+
+  .collapsible--expanded .faq__content {
+    padding: 1.6rem;
+    line-height: 2.4rem;
+  }
+
+  /* Pricing table page */
+  .section__first-offer .grid-cols-3,
+  .section__second-offer .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .section__first-offer .container,
+  .section__second-offer .container {
+    max-width: 45rem;
+  }
+
+  .section__first-offer {
+    margin-top: unset;
+  }
+}
+
+/* Bellow 656px (Phones) */
+@media (max-width: 41em) {
+  .section__navbar .container {
+    margin: 0;
+  }
+
+  .business__text__col {
+    padding: 3.2rem 2rem 4.2rem;
+  }
+
+  .section__statistics .grid-cols-4 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section__value .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .value__title {
+    line-height: 3.6rem;
+  }
+
+  .section__services .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .company-value__left-col {
+    margin-right: 0;
+  }
+
+  .section__testimonial .container {
+    margin-top: 0;
+    box-shadow: unset;
+  }
+
+  .section__testimonial {
+    background-color: #8a8a8a;
+  }
+
+  .customers-trust__description {
+    margin-bottom: 6.4rem;
+  }
+
+  .section__cutomers-trust .d--flex,
+  .section__testimonial .container {
+    height: unset;
+  }
+
+  .section__testimonial {
+    padding: 6.4rem 0;
+  }
+
+  .section__services .media__body {
+    max-width: 300px;
+  }
+
+  .media {
+    margin: 0 auto;
+  }
+
+  /* Services page */
+  .services_page__services .cards {
+    row-gap: 4.8rem;
+  }
+
+  .services_page__services .container {
+    margin-bottom: 6.4rem;
+  }
+
+  /* Pricing table page */
+  .section__third-offer .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  .section__third-offer .container {
+    max-width: 45rem;
+  }
+
+  /* Contacts page */
+  .contact-info__col .grid-cols-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .adress__col {
+    margin: 4.8rem 4.8rem 0;
+  }
+
+  .phone-email__col {
+    margin: 4.8rem;
+  }
+}
+
+/* Bellow 496px (Phones) */
+@media (max-width: 31em) {
+  .section__footer .grid-cols-4 {
+    grid-template-columns: 1fr;
+  }
+
+  /* News single page */
+  .all-tags__container .grid-cols-3 {
+    grid-template-columns: 1fr;
+  }
+
+  .tag__container {
+    margin: 1.2rem 0;
+  }
+
+  /* FAQ page */
+  .faq__col .collapsible__header {
+    padding: 1.6rem 2.7rem 1.6rem 2.6rem;
+  }
+}
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+-Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
