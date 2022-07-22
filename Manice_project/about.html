@@ -11,16 +11,63 @@
       rel="stylesheet"
     />
     <!-- CSS styles -->
-    <?php
-      include 'css_import.php';
-    ?>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/queries.css" />
     <title>Document</title>
   </head>
   <body>
     <!-- Navbar -->
-    <?php
-    include 'navbar.php';
-    ?>
+    <div class="container">
+      <nav class="nav collapsible">
+        <a href="./index.html">
+          <div class="brand-container">
+            <svg class="brand brand-icon1">
+              <use xlink:href="assets\images\brand_sprite.svg#vector1"></use>
+            </svg>
+            <svg class="brand brand-icon2">
+              <use xlink:href="assets\images\brand_sprite.svg#vector2"></use>
+            </svg>
+            <svg class="brand brand-icon3">
+              <use xlink:href="assets\images\brand_sprite.svg#manice"></use>
+            </svg>
+          </div>
+        </a>
+        <img class="nav__toggler" src="./assets/images/burger_menu.svg" alt="" />
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="./index.html">Home</a></li>
+          <li class="nav__item"><a href="./about.html">About</a></li>
+          <li class="nav__item services__link">
+            <a href="./services.html">Services +</a>
+            <div class="dd__menu">
+              <ul class="list">
+                <li class="nav__item dd__link">
+                  <a href="./service single.html">Financial Analysis</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item"><a href="./news.html">News</a></li>
+          <li class="nav__item pages__link">
+            <a href="./pricing table.html">Pages +</a>
+            <div class="dd__menu">
+              <ul class="list">
+                <li class="nav__item dd__link">
+                  <a href="./faq.html">FAQ</a>
+                </li>
+                <li class="nav__item dd__link">
+                  <a href="./pricing table.html">Pricing table</a>
+                </li>
+                <li class="nav__item dd__link">
+                  <a href="./404.html">404</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__item"><a href="./contacts.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    
 
     <!-- Page Header -->
     <header class="page__header">
@@ -327,9 +374,151 @@
     </section>
 
     <!-- Footer -->
-    <?php
-    include 'footer.php';
-    ?>
+<!-- Footer -->
+<footer>
+  <section class="section__contact-us bg--primary">
+    <div class="container">
+      <div class="grid grid-cols-2">
+        <div class="footer__text-col">
+          <h3 class="contact-us__title text--white">
+            Don't hesitate to contact us any time.
+          </h3>
+          <p class="contact-us__description">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur sint occaecat cupidatat.
+          </p>
+        </div>
+        <a href="./contacts.html">
+          <div class="btn btn--white">Get a Quote</div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="section__footer text--white">
+    <div class="container pad-top pad-bot">
+      <div class="grid grid-cols-4">
+        <div class="brand__col">
+          <div class="brand-container">
+            <svg class="brand brand-icon1">
+              <use
+                xlink:href="assets\images\brand_sprite_white.svg#vector1_white"
+              ></use>
+            </svg>
+            <svg class="brand brand-icon2 brand--white">
+              <use
+                xlink:href="assets\images\brand_sprite_white.svg#vector2_white"
+              ></use>
+            </svg>
+            <svg class="brand brand-icon3 brand--white">
+              <use
+                xlink:href="assets\images\brand_sprite_white.svg#manice_white"
+              ></use>
+            </svg>
+          </div>
+          <p class="brand__description">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur.
+          </p>
+          <ul class="list d--flex social-icons__list">
+            <li class="list__item">
+              <a class="social__icon" href="#"
+                ><ion-icon name="logo-facebook"></ion-icon
+              ></a>
+            </li>
+            <li class="list__item">
+              <a class="social__icon" href="#"
+                ><ion-icon name="logo-twitter"></ion-icon
+              ></a>
+            </li>
+            <li class="list__item">
+              <a class="social__icon" href="#"
+                ><ion-icon name="logo-instagram"></ion-icon
+              ></a>
+            </li>
+            <li class="list__item">
+              <a class="social__icon" href="#"
+                ><ion-icon name="logo-youtube"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="our-company__col">
+          <h4 class="our-company__title">Our Company</h4>
+          <ul class="list list--arrow-head">
+            <a class="footer__link" href="./index.html">
+              <li class="list__item">Homepage</li>
+            </a>
+            <a class="footer__link" href="./about.html">
+              <li class="list__item">About</li>
+            </a>
+            <a class="footer__link" href="#">
+              <li class="list__item">Schedule</li>
+            </a>
+            <a class="footer__link" href="#">
+              <li class="list__item">Gallery</li>
+            </a>
+            <a class="footer__link" href="./contacts.html">
+              <li class="list__item">Contact</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="useful-links__col">
+          <h4 class="useful-links__title">Useful Links</h4>
+          <ul class="list list--arrow-head">
+            <a class="footer__link" href="./index.html">
+              <li class="list__item">Homepage</li>
+            </a>
+            <a class="footer__link" href="./about.html">
+              <li class="list__item">About</li>
+            </a>
+            <a class="footer__link" href="#">
+              <li class="list__item">Schedule</li>
+            </a>
+            <a class="footer__link" href="#">
+              <li class="list__item">Gallery</li>
+            </a>
+            <a class="footer__link" href="./contacts.html">
+              <li class="list__item">Contact</li>
+            </a>
+          </ul>
+        </div>
+
+        <div class="contact-us__col">
+          <h4 class="useful-links__title">Contact Info</h4>
+          <ul class="list">
+            <div class="d--flex">
+              <a href="#"><ion-icon name="location-outline"></ion-icon></a>
+              <li class="list__item">
+                99 S.t Jomblo Park Pekanbaru 28292. Indonesia
+              </li>
+            </div>
+            <div class="d--flex">
+              <a href="#"><ion-icon name="call-outline"></ion-icon></a>
+              <li class="list__item">(0761) 654-123987</li>
+            </div>
+            <div class="d--flex">
+              <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+              <li class="list__item">info@yoursite.com</li>
+            </div>
+            <div class="d--flex">
+              <a href="#"><ion-icon name="time-outline"></ion-icon></a>
+              <li class="list__item">Mon - Sat 09:00 - 17:00</li>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="bg--black">
+      <div class="d--flex section__copyright">
+        <p class="copyright__text">
+          &#9400; 2020 Manice Figma Template. All rights reserved
+        </p>
+      </div>
+    </div>
+  </section>
+</footer>
+
 
     <!-- Scripts -->
     <script

@@ -13,13 +13,13 @@
     <!-- CSS styles -->
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="./assets/css/queries.css" />
-    <title>Manice home page</title>
+    <title>Document</title>
   </head>
   <body>
     <!-- Navbar -->
     <div class="container">
       <nav class="nav collapsible">
-        <a href="./index.php">
+        <a href="./index.html">
           <div class="brand-container">
             <svg class="brand brand-icon1">
               <use xlink:href="assets\images\brand_sprite.svg#vector1"></use>
@@ -38,125 +38,53 @@
           alt=""
         />
         <ul class="list nav__list collapsible__content">
-          <li class="nav__item"><a href="./index.php">Home</a></li>
-          <li class="nav__item"><a href="./about.php">About</a></li>
+          <li class="nav__item"><a href="./index.html">Home</a></li>
+          <li class="nav__item"><a href="./about.html">About</a></li>
           <li class="nav__item services__link">
-            <a href="./services.php">Services +</a>
+            <a href="./services.html">Services +</a>
             <div class="dd__menu">
               <ul class="list">
                 <li class="nav__item dd__link">
-                  <a href="./service single.php">Financial Analysis</a>
+                  <a href="./service single.html">Financial Analysis</a>
                 </li>
               </ul>
             </div>
           </li>
-          <li class="nav__item"><a href="./news.php">News</a></li>
+          <li class="nav__item"><a href="./news.html">News</a></li>
           <li class="nav__item pages__link">
-            <a href="./pricing table.php">Pages +</a>
+            <a href="./pricing table.html">Pages +</a>
             <div class="dd__menu">
               <ul class="list">
                 <li class="nav__item dd__link">
-                  <a href="./faq.php">FAQ</a>
+                  <a href="./faq.html">FAQ</a>
                 </li>
                 <li class="nav__item dd__link">
-                  <a href="./pricing table.php">Pricing table</a>
+                  <a href="./pricing table.html">Pricing table</a>
                 </li>
                 <li class="nav__item dd__link">
-                  <a href="./404.php">404</a>
+                  <a href="./404.html">404</a>
                 </li>
               </ul>
             </div>
           </li>
-          <li class="nav__item"><a href="./contacts.php">Contact</a></li>
+          <li class="nav__item"><a href="./contacts.html">Contact</a></li>
         </ul>
       </nav>
     </div>
 
-    <!-- Hero -->
-    <section class="section__hero">
-      <div class="container">
-        <div class="hero">
-          <h1 class="hero__title text--white">
-            We are driven to create a better financial future
-          </h1>
-          <p class="hero__text text--white">
-            Our professional team works to increase productivity and cost
-            effectiveness on the market.
-          </p>
-          <div class="d--flex">
-            <a href="./about.php"
-              ><button class="btn btn--black">Learn More</button></a
-            >
-            <a href="./contacts.php"
-              ><button class="btn btn--primary">Contact Us</button></a
-            >
-          </div>
+    <!-- Page header -->
+    <body>
+      <header class="page__header">
+        <div class="d--flex align-center">
+          <h1 class="text--primary">Financial Analysis</h1>
+          <div class="rectangular"></div>
         </div>
-      </div>
-    </section>
-
-    <!-- Business solution -->
-    <section class="section__business-solutions">
-      <div class="container bg--white">
-        <div class="grid grid-cols-2">
-          <div class="business__text__col">
-            <h5 class="business__header">Business Solutions</h5>
-            <p class="business__text body--color">
-              Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste
-              natus error sit voluptatem accusantium dolore mque laudantium,
-              totam rem aperiam eaque ipsa quae ab illo invent. Sed ut
-              perspiciatis unde omnis.
-            </p>
-            <a href="#"><img src="./assets/images/arrow.png" alt="" /></a>
-          </div>
-          <div class="video__col">
-            <video controls class="business__video" src=""></video>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Section statistics -->
-    <section class="section__statistics">
-      <div class="container">
-        <div class="grid grid-cols-4">
-          <h3 class="statistics__title text--primary">
-            Experienced in mortgage and financial advice!
-          </h3>
-
-          <p class="statistics__text">
-            Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste
-            natus error sit voluptatem accusantium dolore mque laudantium, totam
-            rem aperiam eaque ipsa quae ab illo invent. Sed ut perspiciatis unde
-            omnis.
-          </p>
-
-          <div class="statistics__col">
-            <p class="statistic__count">734</p>
-            <p class="statistics__name">Satisfied Customers</p>
-          </div>
-
-          <div class="statistics__col">
-            <p class="statistic__count">542</p>
-            <p class="statistics__name">Consulteds</p>
-          </div>
-
-          <div class="statistics__col">
-            <p class="statistic__count">17</p>
-            <p class="statistics__name">Years Experience</p>
-          </div>
-
-          <div class="statistics__col">
-            <p class="statistic__count">324</p>
-            <p class="statistics__name">Finance Help</p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </header>
+    </body>
 
     <!-- Company Value -->
-    <section class="section__value body--color">
-      <div class="value-container">
+    <section class="financial__company-value">
+      <div class="financial-container">
         <div class="grid grid-cols-2">
           <div class="company-value__left-col body--color">
             <div class="value-container-left-home">
@@ -183,21 +111,65 @@
                   ut labore et dolore.
                 </li>
               </ul>
-              <a href="./about.php"
-                ><button class="btn btn--primary">Learn More</button></a
-              >
+              <p>
+                Duis aute irure dolor in reprehenderit in voluptate velit
+                essecillum dolore eu fugiat nulla pariatur.
+              </p>
             </div>
           </div>
           <div class="value__img-col"></div>
-          <div class="bg-rectangle"></div>
+        </div>
+        <div class="financial__bg-rectangle bg--primary"></div>
+      </div>
+    </section>
+
+    <!-- Business Solutions -->
+    <section class="section__solutions">
+      <div class="container">
+        <div class="grid grid-cols-2">
+          <div class="solutions__img-col">
+            <img
+              class="business-solution__img"
+              src="assets\images\business solution diagram.svg"
+              alt=""
+            />
+          </div>
+          <div class="solutions__text-col body--color">
+            <h3 class="solutions__title">
+              <span class="text--primary">Business</span> Solutions
+            </h3>
+            <p class="solutions__text">
+              Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste
+              natus error sit voluptatem accusantium dolore mque laudantium,
+              totam rem aperiam eaque ipsa quae ab illo invent. Sed ut
+              perspiciatis unde omnis.
+            </p>
+            <ul class="list--tick">
+              <li class="list__item">
+                Excepteur sint occaecat cupidatat non proident sunt in culpa qui
+                officia deserunt mollit anim.
+              </li>
+              <li class="list__item">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse.
+              </li>
+            </ul>
+            <p class="">
+              Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Our Services -->
-    <section class="section__services">
+    <!-- Services -->
+    <section
+      class="section__services services_page__services financial-services"
+    >
       <div class="d--flex justify-center">
-        <h3 class="services__title">
+        <h3 class="services__title section--title">
           <span class="text--primary">Our</span> Services
         </h3>
       </div>
@@ -213,10 +185,11 @@
             </div>
             <div class="media__body">
               <h6 class="media__title">Financial Analysis</h6>
-              <p class="body-color">
+              <p class="media__text body-color">
                 Duis aute irure dolor in reprehenderit in voluptate velit
                 essecillum dolore eu fugiat nulla pariatur.
               </p>
+              <a class="services__link text--primary" href="#">Read more</a>
             </div>
           </div>
 
@@ -230,10 +203,11 @@
             </div>
             <div class="media__body">
               <h6 class="media__title">Business Solutions</h6>
-              <p class="body-color">
+              <p class="media__text body-color">
                 Duis aute irure dolor in reprehenderit in voluptate velit
                 essecillum dolore eu fugiat nulla pariatur.
               </p>
+              <a class="services__link text--primary" href="#">Read more</a>
             </div>
           </div>
 
@@ -247,10 +221,11 @@
             </div>
             <div class="media__body">
               <h6 class="media__title">Client Management</h6>
-              <p class="body-color">
+              <p class="media__text body-color">
                 Duis aute irure dolor in reprehenderit in voluptate velit
                 essecillum dolore eu fugiat nulla pariatur.
               </p>
+              <a class="services__link text--primary" href="#">Read more</a>
             </div>
           </div>
 
@@ -264,10 +239,11 @@
             </div>
             <div class="media__body">
               <h6 class="media__title">Online Consulting</h6>
-              <p class="body-color">
+              <p class="media__text body-color">
                 Duis aute irure dolor in reprehenderit in voluptate velit
                 essecillum dolore eu fugiat nulla pariatur.
               </p>
+              <a class="services__link text--primary" href="#">Read more</a>
             </div>
           </div>
 
@@ -281,10 +257,11 @@
             </div>
             <div class="media__body">
               <h6 class="media__title">Business Opportunities</h6>
-              <p class="body-color">
+              <p class="media__text body-color">
                 Duis aute irure dolor in reprehenderit in voluptate velit
                 essecillum dolore eu fugiat nulla pariatur.
               </p>
+              <a class="services__link text--primary" href="#">Read more</a>
             </div>
           </div>
 
@@ -298,142 +275,258 @@
             </div>
             <div class="media__body">
               <h6 class="media__title">IT Consulting</h6>
-              <p class="body-color">
+              <p class="media__text body-color">
                 Duis aute irure dolor in reprehenderit in voluptate velit
                 essecillum dolore eu fugiat nulla pariatur.
               </p>
+              <a class="services__link text--primary" href="#">Read more</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Customers trust -->
-    <section class="section__cutomers-trust bg--primary">
-      <div class="d--flex">
-        <h3 class="customers-trust__title">
-          All of our customers trust their success to us
-        </h3>
-        <p class="customers-trust__description">
-          Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste
-          natus error sit voluptatem accusantium dolore mque laudantium, totam
-          rem aperiam eaque ipsa quae ab illo invent. Sed ut perspiciatis unde
-          omnis.
-        </p>
-      </div>
-    </section>
-
-    <!-- Testimonial section -->
-    <section class="section__testimonial text--white">
+    <!-- Our Pricing -->
+    <section class="section__financ-our-pricing">
       <div class="container">
-        <blockquote class="quote">
-          <p class="quote__text">
-            Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste
-            natus error sit voluptatem accusantium dolore mque laudantium, totam
-            rem aperiam eaque ipsa quae ab illo invent. Sed ut perspiciatis unde
-            omnis.
-          </p>
-        </blockquote>
-        <p class="testimonial__name">Rudhi sasmito</p>
-        <p class="testimonial__qualification">&mdash; Head Of Opertations</p>
-      </div>
-    </section>
-
-    <!-- Company logos -->
-    <section class="section__company-logos">
-      <div class="container">
-        <div class="grid grid-cols-4">
-          <img
-            class="company__icon"
-            src="assets\images\company_logos\company_first.svg#company_first"
-            alt=""
-          />
-          <img
-            class="company__icon"
-            src="assets\images\company_logos\company_second.svg#company_second"
-            alt=""
-          />
-          <img
-            class="company__icon"
-            src="assets\images\company_logos\company_third.svg#company_third"
-            alt=""
-          />
-          <img
-            class="company__icon"
-            src="assets\images\company_logos\company_fourth.svg#company_fourth"
-            alt=""
-          />
+        <div class="d--flex justify-center">
+          <h3 class="our-pricing__title section--title">
+            <span class="text--primary">Our</span> Pricing
+          </h3>
         </div>
-      </div>
-    </section>
-
-    <!-- Recent news cards -->
-    <section class="section__recent-news">
-      <div class="d--flex title__container">
-        <h3 class="news__title">
-          <span class="text--primary">Recent </span>News
-        </h3>
-      </div>
-
-      <div class="container">
         <div class="grid grid-cols-3">
-          <div class="card body--color">
-            <div class="card__img"></div>
-            <h4 class="card__title text--black">
-              Reprehenderit in voluptate velit esse cillum
-            </h4>
-            <div class="d--flex">
-              <p class="card__date">July 29, 2020</p>
-              <hr class="vertical__line" />
-              <p class="topic">Arts</p>
-            </div>
-            <p class="card__text">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident sunt in culpa.
+          <!-- first card -->
+          <div class="pricing__card body--color">
+            <p class="pricing__plan text-align-center">Starter</p>
+            <p class="pricing__price bold-lato-text text-align-center">Free</p>
+            <p class="pricing__description italic--text text-align-center">
+              for up to 2 editors and 3 projects
             </p>
-            <a class="card__link text--primary" href="./news  single.php"
-              >Read more</a
-            >
+
+            <ul class="list features__list">
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="./assets/images/pricing feature tick.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">3 projects</p>
+                </div>
+              </li>
+
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="./assets/images/pricing feature tick.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">30-day version history</p>
+                </div>
+              </li>
+
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="./assets/images/pricing feature tick.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">Up to 2 editors</p>
+                </div>
+              </li>
+
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="./assets/images/pricing feature tick.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">Unlimited cloud storage</p>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#">
+              <div class="btn btn--primary pricing__btn">Get Now</div>
+            </a>
           </div>
 
-          <div class="card body--color">
-            <div class="card__img"></div>
-            <h4 class="card__title text--black">
-              Caecat cupidatat non proident sunt in culpa qui officia
-            </h4>
-            <div class="d--flex">
-              <p class="card__date">July 29, 2020</p>
-              <hr class="vertical__line" />
-              <p class="topic">Arts</p>
-            </div>
-            <p class="card__text">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident sunt in culpa.
+          <!-- second card -->
+          <div class="popular-pricing__card bg--primary text--white">
+            <div class="popular__rectangle text--black">popular</div>
+            <p class="pricing__plan text-align-center">Professional</p>
+            <p class="pricing__price bold-lato-text text-align-center">
+              $9.99/mo
             </p>
-            <a class="card__link text--primary" href="./news  single.php"
-              >Read more</a
-            >
+            <p class="pricing__description italic--text text-align-center">
+              for up to 2 editors and 3 projects
+            </p>
+
+            <ul class="list features__list">
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="assets\images\pricing tick white.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">3 projects</p>
+                </div>
+              </li>
+
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="assets\images\pricing tick white.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">30-day version history</p>
+                </div>
+              </li>
+
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="assets\images\pricing tick white.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">Up to 2 editors</p>
+                </div>
+              </li>
+
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="assets\images\pricing tick white.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">Unlimited cloud storage</p>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#">
+              <div class="btn btn--black pricing__btn">Get Now</div>
+            </a>
           </div>
-          <div class="card body--color">
-            <div class="card__img"></div>
-            <h4 class="card__title text--black">
-              Quis nostrud exercitation ullamco laboris nisi
-            </h4>
-            <div class="d--flex">
-              <p class="card__date">July 29, 2020</p>
-              <hr class="vertical__line" />
-              <p class="topic">Arts</p>
-            </div>
-            <p class="card__text">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse
-              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-              cupidatat non proident sunt in culpa.
+
+          <!-- third card -->
+          <div class="pricing__card body--color">
+            <p class="pricing__plan text-align-center">Organization</p>
+            <p class="pricing__price bold-lato-text text-align-center">
+              $19.99/mo
             </p>
-            <a class="card__link text--primary" href="./news  single.php"
-              >Read more</a
-            >
+            <p class="pricing__description italic--text text-align-center">
+              for up to 2 editors and 3 projects
+            </p>
+
+            <ul class="list features__list">
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="./assets/images/pricing feature tick.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">3 projects</p>
+                </div>
+              </li>
+
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="./assets/images/pricing feature tick.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">30-day version history</p>
+                </div>
+              </li>
+
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="./assets/images/pricing feature tick.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">Up to 2 editors</p>
+                </div>
+              </li>
+
+              <li class="pricing__feature">
+                <div class="d--flex">
+                  <img
+                    class="pricing__tick"
+                    src="./assets/images/pricing feature tick.svg"
+                    alt=""
+                  />
+                  <p class="feature__description">Unlimited cloud storage</p>
+                </div>
+              </li>
+            </ul>
+
+            <a href="#">
+              <div class="btn btn--primary pricing__btn">Get Now</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Client says -->
+    <section class="section__client-says">
+      <div class="d--flex justify-center">
+        <h3 class="client-says__title section--title">
+          <span class="text--primary">Client</span> Says
+        </h3>
+      </div>
+      <div class="container">
+        <div class="grid grid-cols-2">
+          <div class="comment__container body--color">
+            <p class="client-comment italic--text">
+              Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste
+              natus error sit voluptatem accusantium dolore mque laudantium.
+            </p>
+            <img
+              class="absolute-quotes"
+              src="assets\images\client card quotes.svg"
+              alt=""
+            />
+            <div class="d--flex client-info">
+              <div class="client-img bg--accent"></div>
+              <div class="client__container">
+                <p class="client-name bold-lato-text text--black">
+                  Rushi Sasmito
+                </p>
+                <p class="client-company italic--text">ABC Company</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="comment__container body--color">
+            <p class="client-comment italic--text">
+              Teritatis et quasi architecto. Sed ut perspiciatis unde omnis iste
+              natus error sit voluptatem accusantium dolore mque laudantium.
+            </p>
+            <img
+              class="absolute-quotes"
+              src="assets\images\client card quotes.svg"
+              alt=""
+            />
+            <div class="d--flex client-info">
+              <div class="client-img bg--accent"></div>
+              <div class="client__container">
+                <p class="client-name bold-lato-text text--black">Sam</p>
+                <p class="client-company italic--text">Company ABC</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -453,7 +546,7 @@
                 cillum dolore eu fugiat nulla pariatur sint occaecat cupidatat.
               </p>
             </div>
-            <a href="./contacts.php">
+            <a href="./contacts.html">
               <div class="btn btn--white">Get a Quote</div>
             </a>
           </div>
@@ -510,10 +603,10 @@
             <div class="our-company__col">
               <h4 class="our-company__title">Our Company</h4>
               <ul class="list list--arrow-head">
-                <a class="footer__link" href="./index.php">
+                <a class="footer__link" href="./index.html">
                   <li class="list__item">Homepage</li>
                 </a>
-                <a class="footer__link" href="./about.php">
+                <a class="footer__link" href="./about.html">
                   <li class="list__item">About</li>
                 </a>
                 <a class="footer__link" href="#">
@@ -522,7 +615,7 @@
                 <a class="footer__link" href="#">
                   <li class="list__item">Gallery</li>
                 </a>
-                <a class="footer__link" href="./contacts.php">
+                <a class="footer__link" href="./contacts.html">
                   <li class="list__item">Contact</li>
                 </a>
               </ul>
@@ -531,10 +624,10 @@
             <div class="useful-links__col">
               <h4 class="useful-links__title">Useful Links</h4>
               <ul class="list list--arrow-head">
-                <a class="footer__link" href="./index.php">
+                <a class="footer__link" href="./index.html">
                   <li class="list__item">Homepage</li>
                 </a>
-                <a class="footer__link" href="./about.php">
+                <a class="footer__link" href="./about.html">
                   <li class="list__item">About</li>
                 </a>
                 <a class="footer__link" href="#">
@@ -543,7 +636,7 @@
                 <a class="footer__link" href="#">
                   <li class="list__item">Gallery</li>
                 </a>
-                <a class="footer__link" href="./contacts.php">
+                <a class="footer__link" href="./contacts.html">
                   <li class="list__item">Contact</li>
                 </a>
               </ul>
