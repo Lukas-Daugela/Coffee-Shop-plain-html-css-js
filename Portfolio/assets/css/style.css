@@ -121,6 +121,52 @@ h2 {
   color: var(--color-accent);
 }
 
+/* Header-box */
+.header-box__container {
+  align-items: center;
+  border: 8px solid var(--color-primary);
+  display: flex;
+  height: 6.8rem;
+  justify-content: center;
+  margin: 0 auto;
+  width: fit-content;
+  margin-bottom: 4.7rem;
+}
+
+@media (min-width: 768px) {
+  .header-box__container {
+    margin-bottom: 5.2rem;
+  }
+}
+
+.header-box__header {
+  margin: 0 3.5rem;
+}
+
+@media (min-width: 1024px) {
+  .header-box__container {
+    height: 8.7rem;
+  }
+
+  .header-box__header {
+    margin: 0 6rem;
+  }
+
+  .header-box__container {
+    margin-bottom: 7.9rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .header-box__container {
+    height: 10.7rem;
+  }
+
+  .header-box__header {
+    margin: 0 7rem;
+  }
+}
+
 /* Icons */
 .color--white {
   fill: var(--color-secondary);
