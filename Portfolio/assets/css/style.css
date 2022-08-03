@@ -187,6 +187,43 @@ h2 {
   }
 }
 
+/* Buttons */
+.btn {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  border-style: solid;
+  border-width: 0 3px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  height: 3.2rem;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  text-transform: uppercase;
+  min-width: 14rem;
+  transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.btn.text--white:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+
 /* Footer */
 .footer__social-icon {
   width: 3rem;
