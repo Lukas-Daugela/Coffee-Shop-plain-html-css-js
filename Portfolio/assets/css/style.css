@@ -120,3 +120,86 @@ h2 {
 .text--accent {
   color: var(--color-accent);
 }
+
+/* Icons */
+.color--white {
+  fill: var(--color-secondary);
+}
+
+.icon__container {
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s cubic-bezier(0, 0, 1, 0.49);
+}
+
+@media (min-width: 768px) {
+  .icon__container {
+    background: var(--color-hero-icons-bg);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    display: flex;
+    width: 5.3rem;
+    height: 4.8rem;
+  }
+
+  .icon__container:hover {
+    background-color: var(--color-secondary);
+  }
+}
+
+@media (min-width: 1024) {
+  .icon__container {
+    width: 6.1rem;
+    height: 5.6rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .icon__container {
+    width: 6.1rem;
+    height: 5.6rem;
+  }
+}
+
+/* Hero */
+@media (min-width: 768px) {
+  .hero__social-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hero__social-icon.color--white {
+    fill: var(--color-primary);
+    transition: 0.3s ease-in-out;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__social-icon {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .hero__social-icon {
+    width: 36px;
+    height: 36px;
+  }
+}
+
+/* Footer */
+.footer__social-icon {
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.footer__social-icon:hover {
+  opacity: 1;
+  box-shadow: 0 0 1em rgb(255, 255, 255);
+}
+
+.footer__social-icon {
+  margin: 0 1.4rem;
+}
