@@ -26,9 +26,10 @@ html {
 
 body {
   background: var(--color-body-bg);
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   height: 100vh;
-  font-family: "Open Sans", sans-serif;
+  position: relative;
 }
 
 :root {
@@ -327,7 +328,141 @@ h2 {
 }
 
 /* Hero */
+.hero__dark-side {
+  background-color: var(--color-primary);
+  height: 100vh;
+  z-index: 1;
+}
+
+.bright-side__bg {
+  background: var(--color-hero-mobile-bg);
+  bottom: 0;
+  clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+  left: 0;
+  min-height: 23rem;
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.bg__img {
+  background-color: transparent;
+  background-image: url(../images/big-hero-photo-removebg.png);
+  background-position: center;
+  background-size: cover;
+  bottom: 0;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+
+.hero__bright-side {
+  background: rgba(0, 0, 0, 0.56);
+  bottom: 0;
+  clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  min-height: 23rem;
+  padding-bottom: 4.8rem;
+  position: absolute;
+  right: 0;
+  z-index: 4;
+}
+
+.hero__text {
+  color: var(--color-secondary);
+}
+
+.hero__text {
+  margin-top: auto;
+  margin-left: 3.7rem;
+}
+
+.hero__greeting {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+
+.hero__description {
+  font-weight: 800;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+}
+
+.hero__container {
+  position: relative;
+}
+
+.icons__container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 29px;
+  justify-content: end;
+  margin-right: 3rem;
+}
+
+.hero__container {
+  height: 100vh;
+}
+
+.hero__social-icon {
+  width: 26px;
+  height: 25px;
+}
+
 @media (min-width: 768px) {
+  .bright-side__bg,
+  .hero__bright-side {
+    bottom: 0;
+    clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+    height: 100vh;
+    left: 0;
+    top: 0;
+    width: 49.5%;
+  }
+
+  .bright-side__bg {
+    background: var(--color-hero-desktop-bg);
+  }
+
+  .hero__bright-side {
+    background: transparent;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 0;
+    padding-left: 8rem;
+  }
+
+  .hero__text {
+    margin: unset;
+    color: var(--color-primary);
+  }
+
+  .icons__container {
+    flex-direction: unset;
+    justify-content: unset;
+  }
+
+  .bg__img {
+    left: unset;
+    width: 50rem;
+    height: 90vh;
+  }
+
+  .hero__greeting {
+    margin-bottom: 2.4rem;
+    font-size: 2.2rem;
+  }
+
+  .hero__description {
+    color: var(--color-accent);
+    margin-bottom: 12.6rem;
+    font-size: 1.6rem;
+  }
+
   .hero__social-icon {
     width: 30px;
     height: 30px;
@@ -340,13 +475,54 @@ h2 {
 }
 
 @media (min-width: 1024px) {
+  .bg__img {
+    width: 60rem;
+    height: 90vh;
+    right: 7%;
+  }
+
+  .hero__greeting {
+    font-size: 2.6rem;
+  }
+
+  .hero__description {
+    font-size: 2rem;
+  }
+
   .hero__social-icon {
     width: 38px;
     height: 38px;
   }
 }
 
+@media (min-width: 1440px) {
+  .bg__img {
+    width: 70rem;
+    right: 10%;
+    height: 100vh;
+  }
+
+  .hero__bright-side {
+    padding-left: 23rem;
+  }
+}
+
 @media (min-width: 1920px) {
+  .bg__img {
+    width: 85rem;
+    right: 18%;
+  }
+
+  .hero__greeting {
+    font-size: 4rem;
+    line-height: 5rem;
+  }
+
+  .hero__description {
+    font-size: 2.5rem;
+    line-height: 3rem;
+  }
+
   .hero__social-icon {
     width: 36px;
     height: 36px;
