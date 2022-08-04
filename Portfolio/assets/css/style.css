@@ -169,6 +169,69 @@ h2 {
   }
 }
 
+/* Buttons */
+.btn {
+  background-color: transparent;
+  border-color: var(--color-primary);
+  border-style: solid;
+  border-width: 0 3px;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  height: 3.2rem;
+  letter-spacing: 0.1em;
+  margin: 0 auto;
+  text-transform: uppercase;
+  min-width: 14rem;
+  transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+}
+
+.btn.text--white:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+@media (min-width: 1024px) {
+  .btn {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+  }
+}
+
+/* Grid */
+.grid {
+  display: grid;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.container {
+  max-width: 100.4rem;
+  width: 66%;
+  margin: 0 auto;
+}
+
+.flex-container {
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
 /* Icons */
 .color--white {
   fill: var(--color-secondary);
@@ -529,46 +592,62 @@ h2 {
   }
 }
 
-/* List */
-.list {
-  list-style: none;
+/* About */
+.section__about {
+  margin-top: 7.4rem;
+  margin-bottom: 10rem;
 }
 
-/* Buttons */
-.btn {
-  background-color: transparent;
-  border-color: var(--color-primary);
-  border-style: solid;
-  border-width: 0 3px;
-  cursor: pointer;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 1.3rem;
-  line-height: 1.6rem;
-  height: 3.2rem;
-  letter-spacing: 0.1em;
+.about-header__con {
+  margin-bottom: 3.8rem;
+}
+
+.about__btn {
+  margin-top: 3rem;
+  margin-bottom: 6.6rem;
+  min-width: 18rem;
+}
+
+.horizontal-line {
+  background-image: url(../images/horizontal\ line.svg);
+  min-width: 15.9rem;
+  height: 1.2rem;
   margin: 0 auto;
-  text-transform: uppercase;
-  min-width: 14rem;
-  transition: 0.5s ease-in-out;
 }
 
-.btn:hover {
-  background-color: var(--color-primary);
-  color: var(--color-secondary);
-}
+@media (min-width: 768px) {
+  .about-header__con {
+    margin-bottom: 5.2rem;
+  }
 
-.btn.text--white:hover {
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
+  .about__btn {
+    margin-top: 4.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
-  .btn {
-    font-weight: 600;
-    font-size: 1.5rem;
-    line-height: 1.8rem;
+  .section__about {
+    margin-top: 14.2rem;
+    margin-bottom: 12rem;
   }
+
+  .about-header__con {
+    margin-bottom: 7.1rem;
+  }
+
+  .about__btn {
+    margin-top: 6.7rem;
+    margin-bottom: 8.5rem;
+  }
+
+  .horizontal-line {
+    width: 17rem;
+  }
+}
+
+/* List */
+.list {
+  list-style: none;
 }
 
 /* Footer */
