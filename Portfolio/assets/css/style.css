@@ -645,6 +645,58 @@ h2 {
   }
 }
 
+/* Skills */
+.section__skills {
+  margin-bottom: 10rem;
+}
+
+.skill-logo {
+  height: 10rem;
+}
+
+.section__skills .grid-cols-4 {
+  grid-template-columns: 100%;
+  row-gap: 4.5rem;
+}
+
+.skill__title {
+  font-family: "Montserrat";
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 0.13538em;
+  line-height: 2.9rem;
+  margin-top: 2.7rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skill__wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .section__skills .grid-cols-4 {
+    grid-template-columns: repeat(2, 50%);
+  }
+
+  .section__skills {
+    margin-bottom: 13rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section__skills .grid-cols-4 {
+    grid-template-columns: repeat(3, 33%);
+    row-gap: 8.5rem;
+  }
+
+  .section__skills {
+    margin-bottom: 16.2rem;
+  }
+}
+
 /* List */
 .list {
   list-style: none;
