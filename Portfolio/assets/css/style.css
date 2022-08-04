@@ -697,6 +697,140 @@ h2 {
   }
 }
 
+/* Projects */
+.project__wrapper {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  height: auto;
+  margin: 0 auto;
+}
+
+.section__projects {
+  background-color: var(--color-footer-bg);
+}
+
+.section__projects {
+  padding-top: 6.3rem;
+}
+
+.projects__header-con {
+  margin-bottom: 6.3rem;
+}
+
+.section__projects .header-box__container {
+  border: 8px solid var(--color-secondary);
+}
+
+.project__img,
+.project__cover {
+  width: 100%;
+}
+
+.project__cover {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  top: 0;
+}
+
+.my-role {
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.095em;
+  line-height: 1.2rem;
+  margin-bottom: 2.7rem;
+}
+
+.project-name {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0.20538em;
+  line-height: 3.2rem;
+}
+
+.project__description {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.2rem;
+  margin: 2.5rem 0;
+}
+
+.project__btn {
+  border-color: var(--color-secondary);
+}
+
+.project__btn:first-of-type {
+  margin-right: 1.7rem;
+}
+
+.projects__bottom-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-top: 2.8rem;
+  padding-bottom: 2.4rem;
+  text-align: center;
+}
+
+.section__projects .grid-cols-3 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .project__img {
+    max-height: 30rem;
+    max-width: 45rem;
+  }
+
+  .project__cover {
+    display: none;
+  }
+
+  .project__wrapper:hover .project__cover {
+    display: flex;
+  }
+
+  .section__projects {
+    padding-top: 8.5rem;
+  }
+
+  .projects__header-con {
+    margin-bottom: 8.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .project__description {
+    font-size: 1.2rem;
+  }
+
+  .my-role {
+    font-size: 1.5rem;
+  }
+
+  .project__img {
+    max-height: 40.1rem;
+    max-width: 64rem;
+  }
+
+  .section__projects {
+    padding-top: 10.7rem;
+  }
+
+  .projects__header-con {
+    margin-bottom: 10.7rem;
+  }
+}
+
 /* List */
 .list {
   list-style: none;
