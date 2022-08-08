@@ -271,6 +271,24 @@ h2 {
   }
 }
 
+/* Collapsibles */
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+  opacity: 1;
+}
+
 /* Navbar */
 .nav {
   align-items: center;
@@ -909,10 +927,10 @@ h2 {
 
 /* Footer */
 .footer__social-icon {
-  width: 3rem;
+  cursor: pointer;
   height: 3rem;
   opacity: 0.9;
-  cursor: pointer;
+  width: 3rem;
 }
 
 .footer__social-icon:hover {
@@ -920,24 +938,30 @@ h2 {
   box-shadow: 0 0 1em rgb(255, 255, 255);
 }
 
+.page__footer {
+  background-color: var(--color-footer-bg);
+  text-align: center;
+  padding: 4.6rem 0;
+}
+
+.back-to-top__btn {
+  display: block;
+  margin-bottom: 4.4rem;
+  border-color: var(--color-footer-bg);
+}
+
 .footer__social-icon {
   margin: 0 1.4rem;
 }
 
-/* Collapsibles */
-.collapsible__header {
-  display: flex;
-  justify-content: space-between;
+@media (min-width: 768px) {
+  .page__footer {
+    padding: 5.5rem 0;
+  }
 }
 
-.collapsible__content {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: all 0.3s;
-}
-
-.collapsible--expanded .collapsible__content {
-  max-height: 100vh;
-  opacity: 1;
+@media (min-width: 1024px) {
+  .page__footer {
+    padding: 6.8rem 0;
+  }
 }
