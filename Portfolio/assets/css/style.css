@@ -351,6 +351,7 @@ h2 {
     justify-content: center;
     min-height: 6.6rem;
     padding-left: 41rem;
+    margin-bottom: -6.6rem;
   }
 
   .nav.collapsible--expanded {
