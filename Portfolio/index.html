@@ -89,14 +89,33 @@
           into interactable website that people can use and enjoy. Also with my
           detail oriented skill if needed I can make website pixel perfect.
         </p>
-        <button
-          class="about__btn btn"
-          onclick="location.href='Lukas_Daugela_CV.pdf'"
-          type="button"
-        >
+        <button class="about__btn btn" id="modal__btn" type="button">
           download cv
         </button>
         <div class="horizontal-line"></div>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal__content">
+          <button class="close__btn" id="close__btn">&times</button>
+          <p class="description">There are two versions of my CV:</p>
+          <div class="btn__container">
+            <button
+              class="modal__btn btn"
+              onclick="location.href='Lukas Daugela CV LT.pdf'"
+              type="button"
+            >
+              Lietuvių kalba
+            </button>
+            <button
+              class="modal__btn btn"
+              onclick="location.href='Lukas Daugela CV EN.pdf'"
+              type="button"
+            >
+              English language
+            </button>
+          </div>
+        </div>
       </div>
     </section>
 

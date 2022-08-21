@@ -7,7 +7,6 @@ collapsibles.forEach((item) =>
 );
 
 // Contact form function for sending message
-
 const contact__form = document.getElementById("contact-form");
 
 function sendMessage(e) {
@@ -37,3 +36,27 @@ function sendMessage(e) {
   contact__form.reset();
 }
 contact__form.addEventListener("submit", sendMessage);
+
+// Download CV modal
+const modal = document.getElementById("modal");
+const modalBtn = document.getElementById("modal__btn");
+const closeBtn = document.getElementById("close__btn");
+
+modalBtn.addEventListener("click", openModal);
+closeBtn.addEventListener("click", closeModal);
+window.addEventListener("click", outsideClick);
+
+function openModal() {
+  modal.style.display = "block";
+}
+
+function closeModal() {
+  modal.style.display = "none";
+}
+
+// function to close modal if you clikc outside
+function outsideClick(e) {
+  if (e.target == modal) {
+    modal.style.display = "none";
+  }
+}
