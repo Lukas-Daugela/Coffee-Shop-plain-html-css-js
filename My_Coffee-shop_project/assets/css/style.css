@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+html {
+  /* 62.5% of 16px = 10px */
+  font-size: 62.5%;
+}
+
 :root {
   --color-primary: #321604;
   --color-secondary: #4e1f00;
@@ -15,10 +20,49 @@
 body {
   font-family: "Kanit", sans-serif;
   font-weight: 300;
+  font-size: 1.5rem;
+  background-color: var(--color-body-bg);
 }
 
 h1,
 h2,
 h3 {
   font-weight: 700;
+  color: white;
+}
+
+h1 {
+  font-size: 4.5rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
+.menu-cards__grid {
+  row-gap: 2rem;
+}
+
+.menu__cols {
+  position: relative;
+}
+
+.card-bg__img {
+  background-image: url(../images/menu_images/sweets-img.jpg);
+  background-size: cover;
+  background-position: center;
+  min-height: 35rem;
+  width: 100%;
+  max-width: 56rem;
+  opacity: 0.7;
+}
+
+.menu-card__text {
+  position: absolute;
+  bottom: 2rem;
+  width: 100%;
 }
