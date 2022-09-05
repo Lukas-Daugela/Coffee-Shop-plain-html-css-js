@@ -43,19 +43,33 @@ h3 {
   font-size: 2.5rem;
 }
 
+/* General */
+.bg--images {
+  background-size: cover;
+  background-position: center;
+}
+
 /* Button */
+.btn {
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
 .btn--accent {
   background-color: var(--color-accent);
   color: white;
 }
 
 .btn--accent:hover {
-  border: none;
+  border-color: #b78335;
   background-color: #b78335;
   color: white;
 }
 
 /* Menu cards */
+.menu__section {
+  margin: 5rem 0;
+}
 .menu-cards__grid {
   row-gap: 2rem;
 }
@@ -101,7 +115,7 @@ h3 {
 .menu-card__text {
   position: absolute;
   bottom: 2rem;
-  width: 100%;
+  width: 96%;
 }
 
 /* Navbar */
@@ -226,7 +240,47 @@ h3 {
   }
 }
 
-/* Menu section */
-.menu__section {
-  margin: 2rem 0;
+/* Lounge section */
+.lounge__section {
+  margin: 5rem 0;
+  padding: 5rem 0;
+  background-color: var(--color-primary);
+}
+
+.lounge__section .col,
+.lounge__section .bg--images {
+  min-height: 40rem;
+  height: 100%;
+}
+
+.lounge__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.lounge__header {
+  padding-right: 1rem;
+}
+
+.lounge__description {
+  max-width: 35ch;
+}
+
+.lounge-img__1 {
+  background-image: url(../images/lounge__1.jpg);
+}
+.lounge-img__2 {
+  background-image: url(../images/lounge__2.jpg);
+}
+
+@media (max-width: 768px) {
+  .lounge__text {
+    margin: 0 1rem;
+  }
+
+  .lounge__header {
+    padding-right: unset;
+  }
 }
