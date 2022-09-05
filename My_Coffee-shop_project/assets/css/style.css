@@ -284,3 +284,44 @@ h3 {
     padding-right: unset;
   }
 }
+
+/* Discount card section */
+.discount-text__col {
+  background-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 45rem;
+}
+
+.discount-card__img {
+  background-image: url(../images/discount\ card.png);
+  height: 8rem;
+  width: 12rem;
+  margin: 2rem 0;
+}
+
+.discount__description {
+  padding: 0 1rem;
+  max-width: 40ch;
+}
+
+.discount-card__btn {
+  margin-top: 2rem;
+}
+
+.discount-side__img-col {
+  padding: 0;
+}
+
+.discount-side__img {
+  background-image: url(../images/discount-side__img.jpg);
+  height: 50rem;
+}
+
+@media (min-width: 768px) {
+  .discount-text__col {
+    height: unset;
+  }
+}
