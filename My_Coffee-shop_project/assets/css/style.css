@@ -338,7 +338,7 @@ h3 {
 }
 
 .form__container {
-  position: absolute;
+  /* position: absolute; */
   left: 0;
   right: 0;
   margin: 0 auto;
@@ -376,6 +376,7 @@ h3 {
   }
 
   .form__container {
+    position: absolute;
     top: 5rem;
     bottom: 5rem;
     justify-content: right;
@@ -399,4 +400,24 @@ h3 {
   .booking__btn {
     padding: 2rem 3rem;
   }
+}
+
+/* Good property cards */
+.good-property__section {
+  margin: 5rem 0;
+}
+
+.property__icon {
+  font-size: 5rem;
+  color: var(--color-accent);
+}
+
+.property__card {
+  justify-content: center;
+  background-color: var(--color-secondary);
+  height: 25rem;
+}
+
+.property__description {
+  color: var(--color-desc-text);
 }
