@@ -62,6 +62,10 @@ h3 {
   padding: 0 2rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* Button */
 .btn {
   font-weight: 600;
@@ -69,6 +73,11 @@ h3 {
 }
 
 .btn--accent {
+  background-color: var(--color-accent);
+  color: white;
+}
+.btn--accent:focus {
+  border-color: #b78335;
   background-color: var(--color-accent);
   color: white;
 }
@@ -479,7 +488,7 @@ h3 {
 .feedback-section {
   display: flex;
   min-height: 60rem;
-  margin: 5rem 0;
+  margin: 5rem 0 0;
   padding: 5rem 0;
   background-image: url(../images/feedback_bg.jpg);
 }
@@ -516,4 +525,68 @@ h3 {
 .carousel-control-next,
 .carousel-control-prev {
   width: unset;
+}
+
+/* Footer */
+.page__footer {
+  background-color: var(--color-primary);
+  padding: 5rem 2rem;
+}
+
+.footer__row {
+  row-gap: 2rem;
+}
+
+.footer__description-col {
+  padding-right: 2rem;
+}
+
+.footer__header {
+  color: var(--color-accent);
+}
+
+.about-col__header {
+  margin-bottom: 2rem;
+}
+
+.footer__social-icons i {
+  color: var(--color-accent);
+  margin-right: 1.5rem;
+  font-size: 2rem;
+}
+.footer__social-icons i:hover {
+  color: #b78335;
+}
+
+.footer__contact-container {
+  margin: 0 auto;
+}
+
+.footer__location-link {
+  color: white;
+}
+.footer__location-link:hover {
+  color: var(--color-accent);
+}
+
+.footer__underline {
+  height: 2px;
+  width: 18rem;
+  background-color: var(--color-accent);
+  margin-bottom: 2.5rem;
+}
+
+.footer__subscribe-input:focus {
+  border: 2px solid var(--color-accent);
+  box-shadow: unset;
+}
+
+@media (min-width: 1024px) {
+  .footer__col {
+    width: 25%;
+  }
+
+  .footer__row {
+    justify-content: space-around;
+  }
 }
