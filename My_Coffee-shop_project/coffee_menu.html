@@ -24,7 +24,7 @@
 <body>
     <!-- Navbar -->
     <header>
-        <nav class="navbar">
+        <nav class="nav-bar">
             <a href="/index.html" class="nav-branding">
             <img
                 class="brand__img"
@@ -55,6 +55,42 @@
                 <a href="#" class="nav-link">About</a>
             </li>
             </ul>
+
+            <div class="shoping-cart__container">
+              <span class="shoping__cart">
+                <i class="bi bi-cart3"></i>
+              </span>
+              <p class="cart-items__number">0</p>
+            </div>
+
+            <div class="cart">
+              <h2 class="cart__header">Your cart</h2>
+              <div class="cart__content">
+                <div class="cart__box">
+                  <img class="cart__img" src="./assets/images/menu_images/coffee_menu-img.jpg" alt="">
+                  <div class="detail__box">
+                    <h3 class="cart-product__title">Late Caffee</h3>
+                    <p class="cart__price">$23</p>
+                    <input class="cart__quantity" value="1" type="number">
+                  </div>
+                  <span class="cart__remove">
+                    <i class="bi bi-trash"></i>
+                  </span>
+                </div>
+              </div>
+
+              <div class="cart__total">
+                <h3 class="total__title">Total</h3>
+                <p class="total__price">$0</p>
+              </div>
+
+              <button class="btn btn--accent buy__btn">Buy Now</button>
+
+              <span class="close__cart">
+                <i class="bi bi-x"></i>
+              </span>
+            </div>
+
         </nav>
         </header>
 

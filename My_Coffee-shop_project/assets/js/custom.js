@@ -1,3 +1,4 @@
+// Navbar for mobile and tablet version
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 

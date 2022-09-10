@@ -163,17 +163,15 @@ a {
   list-style: none;
 }
 
-.navbar {
+.nav-bar {
   min-height: 7rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 0 2.4rem;
 }
 
 .home-navbar {
   background-color: #2c1b14a1;
-
   margin-bottom: -10rem;
 }
 
@@ -182,6 +180,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: auto;
   gap: 5rem;
   margin-bottom: 0;
 }
@@ -189,6 +188,21 @@ a {
 .hamburger {
   display: none;
   cursor: pointer;
+}
+
+.cart-items__number {
+  position: absolute;
+  bottom: -2rem;
+  right: -1rem;
+}
+
+.shoping-cart__container {
+  margin: 0 5rem;
+  position: relative;
+}
+
+.shoping-cart__container.active {
+  margin-right: 36rem;
 }
 
 .bar {
@@ -201,9 +215,98 @@ a {
   background-color: white;
 }
 
+.cart {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  z-index: 3;
+  width: 36rem;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: var(--color-primary);
+  transition: 0.3s;
+}
+
+.cart.active {
+  right: 0;
+}
+
+.cart__header {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.cart__box {
+  display: grid;
+  grid-template-columns: 32% 50% 18%;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  border-bottom: 1px solid var(--color-accent);
+}
+
+.cart__img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: contain;
+  padding: 1rem;
+}
+
+.detail__box {
+  display: grid;
+  row-gap: 0.5rem;
+}
+
+.cart-product__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.cart__quantity {
+  border: 1px solid var(--color-desc-text);
+  width: 4rem;
+  text-align: center;
+}
+
+.cart__remove {
+  cursor: pointer;
+  color: var(--color-accent);
+  font-size: 1.8rem;
+}
+
+.cart__total {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1.5rem;
+}
+
+.total__title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.total__price {
+  margin-left: 0.5rem;
+}
+
+.buy__btn {
+  display: flex;
+  margin: 1.5rem auto;
+}
+
+.close__cart {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
+    order: 1;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -213,6 +316,15 @@ a {
   }
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-0.8rem) rotate(-45deg);
+  }
+
+  .shoping-cart__container {
+    margin-right: 3rem;
+    margin-left: auto;
+  }
+
+  .shoping-cart__container.active {
+    margin-right: 36rem;
   }
 
   .nav-menu {
