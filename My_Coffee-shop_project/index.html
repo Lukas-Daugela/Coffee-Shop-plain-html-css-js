@@ -24,46 +24,64 @@
     <title>Coffee Shop</title>
   </head>
   <body>
+    
     <!-- Navbar -->
     <header>
-      <nav class="nav-bar home-navbar">
-        <a href="/index.html" class="nav-branding">
+      <nav class="nav-bar">
+          <a href="/index.html" class="nav-branding">
           <img
-            class="brand__img"
-            src="./assets/images/navbar_logo.png"
-            alt=""
+              class="brand__img"
+              src="./assets/images/navbar_logo.png"
+              alt=""
           />
-        </a>
-        <div class="hamburger">
+          </a>
+          <div class="hamburger">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </div>
+          </div>
 
-        <ul class="nav-menu">
+          <ul class="nav-menu">
           <li class="nav-item">
-            <a href="/index.html" class="nav-link">Home</a>
+              <a href="./index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="/coffee_menu.html" class="nav-link">Coffee</a>
+              <a href="./coffee_menu.html" class="nav-link">Coffee</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Cake</a>
+              <a href="#" class="nav-link">Cake</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">Contact</a>
+              <a href="#" class="nav-link">Contact</a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link">About</a>
+              <a href="#" class="nav-link">About</a>
           </li>
-        </ul>
+          </ul>
 
-        <div class="shoping-cart__container">
-          <span class="shoping__cart">
-            <i class="bi bi-cart3"></i>
-          </span>
-          <p class="cart-items__number">0</p>
-        </div>
+          <div class="shoping-cart__container">
+            <span class="shoping__cart">
+              <i class="bi bi-cart3"></i>
+            </span>
+            <p class="cart-items__number">0</p>
+          </div>
+
+          <div class="cart">
+            <h2 class="cart__header">Your cart</h2>
+            <div class="cart__content">
+            </div>
+
+            <div class="cart__total">
+              <h3 class="total__title">Total</h3>
+              <p class="total__price">$0</p>
+            </div>
+
+            <button class="btn btn--accent buy__btn">Buy Now</button>
+
+              <i class="bi bi-x close__cart"></i>
+            </span>
+          </div>
+
       </nav>
     </header>
 

@@ -17,13 +17,17 @@ document.querySelectorAll(".nav-link").forEach((link) =>
 // Cart
 let cartIcon = document.querySelector(".shoping__cart");
 let cart = document.querySelector(".cart");
-let closeCart = document.querySelector(".close__cart");
+let closeCartButton = document.querySelector(".close__cart");
 let cartItemsNumber = document.querySelector(".cart-items__number");
+
+let cartModal = document.getElementById("cart-modal");
+let cartModalCloseBtn = document.getElementById("close-modal");
 
 cartIcon.addEventListener("click", () => {
   cart.classList.add("active");
 });
-closeCart.addEventListener("click", () => {
+
+closeCartButton.addEventListener("click", () => {
   cart.classList.remove("active");
 });
 
@@ -33,7 +37,6 @@ if (document.readyState == "loading") {
 
 function ready() {
   let removeCartButtons = document.getElementsByClassName("cart__remove");
-  console.log(removeCartButtons);
   for (let i = 0; i < removeCartButtons.length; i++) {
     let button = removeCartButtons[i];
     button.addEventListener("click", removeCartItem);
@@ -58,7 +61,25 @@ function ready() {
 }
 
 function buyButtonClicked() {
-  alert("Your Order is placed");
+  let buyButton = cart.getElementsByClassName("buy__btn")[0];
+  let cartIsEmpty = checkTotal();
+  if (cartIsEmpty) {
+    cart.insertAdjacentHTML(
+      "beforeend",
+      `<p class="alert__msg">
+      Your cart is empty
+      </p>`
+    );
+    buyButton.disabled = true;
+    let alertMessage = cart.getElementsByClassName("alert__msg")[0];
+    setTimeout(() => {
+      alertMessage.remove();
+      buyButton.disabled = false;
+    }, 3000);
+    return;
+  }
+  openCartModal();
+  cart.classList.remove("active");
   let cartContent = document.getElementsByClassName("cart__content")[0];
   while (cartContent.hasChildNodes()) {
     cartContent.removeChild(cartContent.firstChild);
@@ -89,19 +110,35 @@ function addCartClicked(event) {
   let title =
     shopProducts.getElementsByClassName("menu-item__name")[0].innerHTML;
   let price = shopContainer.getElementsByClassName("price-holder")[0].innerHTML;
+  let menuItemText = shopProducts.getElementsByClassName("menu-item__text");
   let productImg =
     shopProducts.getElementsByClassName("menu-item__photo")[0].src;
-  addProductToCart(title, price, productImg);
+  addProductToCart(title, price, productImg, menuItemText[0]);
   updateTotal();
 }
 
-function addProductToCart(title, price, productImg) {
+function addProductToCart(title, price, productImg, menuItemText) {
   let cartShopBox = document.createElement("div");
   cartShopBox.classList.add("cart__box");
   let cartItems = document.getElementsByClassName("cart__content")[0];
   // check if item already added if not incriment total number near cart icon in navbar
   if (!checkIfAdded(title)) {
-    alert("You have already added this item to the cart");
+    menuItemText.insertAdjacentHTML(
+      "beforeend",
+      `<p class="alert__msg">
+        You have already added this item
+      </p>`
+    );
+    // Adds message for 3seconds and disables "Add to cart" button so that ppl wont spam
+    // the message
+    let addCartBtn =
+      menuItemText.parentElement.getElementsByClassName("add__cart")[0];
+    addCartBtn.disabled = true;
+    let alertMessage = menuItemText.getElementsByClassName("alert__msg")[0];
+    setTimeout(() => {
+      alertMessage.remove();
+      addCartBtn.disabled = false;
+    }, 3000);
     return;
   } else cartItemsNumber.innerHTML++;
 
@@ -153,4 +190,31 @@ function updateTotal() {
   // if price contains some Cents value
   total = Math.round(total * 100) / 100;
   document.getElementsByClassName("total__price")[0].innerHTML = "$" + total;
+}
+
+function checkTotal() {
+  let totalPrice = document.getElementsByClassName("total__price")[0].innerHTML;
+  if (totalPrice === "$0") {
+    return true;
+  }
+  return false;
+}
+
+// Cart Modal
+window.addEventListener("click", outsideClick);
+cartModalCloseBtn.addEventListener("click", closeCartModal);
+
+function openCartModal() {
+  cartModal.style.display = "block";
+}
+
+function closeCartModal() {
+  cartModal.style.display = "none";
+}
+
+// function to close modal if you click outside
+function outsideClick(e) {
+  if (e.target == cartModal) {
+    cartModal.style.display = "none";
+  }
 }
