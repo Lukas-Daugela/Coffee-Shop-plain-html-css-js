@@ -25,6 +25,7 @@ body {
   background-color: var(--color-body-bg);
   color: white;
   min-height: 100%;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
@@ -90,6 +91,26 @@ a {
   border-color: #b78335;
   background-color: #b78335;
   color: white;
+}
+
+.link-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+}
+
+.link__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: var(--color-primary);
 }
 
 /* Menu cards */
@@ -197,10 +218,6 @@ a {
   right: -1rem;
 }
 
-.cart .alert__msg {
-  text-align: center;
-}
-
 .shoping-cart__container {
   margin: 0 5rem;
   position: relative;
@@ -224,13 +241,14 @@ a {
   background-color: white;
 }
 
+/* Side section cart */
 .cart {
   position: fixed;
   top: 0;
   right: -100%;
   z-index: 3;
   width: 36rem;
-  min-height: 100vh;
+  bottom: 0;
   padding: 2rem;
   background-color: var(--color-primary);
   transition: 0.3s;
@@ -238,6 +256,8 @@ a {
 
 .cart.active {
   right: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .cart__header {
@@ -310,6 +330,10 @@ a {
   margin: 1.5rem auto;
 }
 
+.cart .alert__msg {
+  text-align: center;
+}
+
 .close__cart {
   position: absolute;
   top: 1rem;
@@ -365,6 +389,10 @@ a {
     opacity: 1;
     padding: 0;
     left: 0;
+  }
+
+  .cart {
+    width: 32rem;
   }
 }
 
@@ -540,7 +568,7 @@ a {
 .form__box {
   background-color: var(--color-secondary);
   padding: 4rem 2rem;
-  height: 45rem;
+  height: 47rem;
   max-width: 35rem;
   margin: 0 auto;
 }
@@ -765,9 +793,38 @@ a {
 
 /* COFFEE MENU */
 /* Menu section */
-.coffee-menu__section {
-  padding: 5rem 0;
+.menu__headers {
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 28.4rem;
+  height: 10rem;
+}
+
+.menu__heading {
+  padding-left: 1rem;
+}
+
+.coffee_menu__bg {
+  background-image: url(../images/menu_title_bg_images/coffee_menu_header_img.jpg);
+}
+
+.cake_menu__bg {
+  background-image: url(../images/menu_title_bg_images/cake_menu_bg_img.jpg);
+}
+
+.sweets_menu__bg {
+  background-image: url(../images/menu_title_bg_images/sweets_menu_bg_img.jpg);
+}
+
+.coffee-menu__section,
+.cake-menu__section,
+.sweets-menu__section {
+  padding-top: 5rem;
   background-color: #2d1404;
+}
+
+.sweets-menu__section {
+  padding-bottom: 5rem;
 }
 
 .menu-item__description,
@@ -778,40 +835,34 @@ a {
 .alert__msg {
   color: red;
 }
-
 .menu__row {
   justify-content: center;
   gap: 2rem;
 }
-
 .menu-item__col {
   max-width: 30rem;
 }
-
 .menu-list {
   list-style: none;
   padding: 0;
 }
-
 .menu-item {
   border-bottom: 1px solid var(--color-accent);
   padding-bottom: 2rem;
 }
 
 .menu-item__name {
-  text-transform: uppercase;
+  text-transform: capitalize;
   margin: 1rem 0;
 }
 
 .price-holder {
   margin: auto 0;
 }
-
 .price__container {
   display: flex;
   justify-content: space-between;
 }
-
 .menu-item__photo {
   height: 20rem;
   min-width: 5rem;
@@ -819,8 +870,15 @@ a {
   object-fit: cover;
   margin: auto 0;
 }
-
 @media (min-width: 768px) {
+  .menu__headers {
+    max-width: unset;
+    height: 20rem;
+  }
+
+  .menu__heading {
+    padding: 2rem;
+  }
   .menu-item__photo {
     border-radius: 50px;
     height: 5rem;
@@ -828,27 +886,22 @@ a {
     margin: auto 0;
     margin-right: 2rem;
   }
-
   .menu-item {
     display: grid;
     grid-template-columns: 8rem auto 20rem;
   }
-
   .price__container {
     align-items: center;
   }
-
   .menu-item__col {
     max-width: unset;
     margin: auto;
   }
-
   .menu__row {
     justify-content: unset;
     gap: unset;
   }
 }
-
 @media (min-width: 992px) {
   .menu-item {
     display: grid;
@@ -856,30 +909,25 @@ a {
     margin: 0 2rem;
     padding: 2rem 0;
   }
-
   .price__container {
     grid-column-start: 1;
     grid-column-end: -1;
     justify-content: unset;
   }
-
   .price-holder {
     margin: auto 2rem auto 8rem;
   }
 }
-
 @media (min-width: 1200px) {
   .menu-item {
     display: grid;
     grid-template-columns: 8rem auto 20rem;
   }
-
   .price__container {
     grid-column-start: unset;
     align-items: center;
     justify-content: space-between;
   }
-
   .price-holder {
     margin: auto 0;
     padding-left: 2rem;
