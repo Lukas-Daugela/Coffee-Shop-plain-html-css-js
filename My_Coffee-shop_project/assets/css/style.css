@@ -933,3 +933,36 @@ a {
     padding-left: 2rem;
   }
 }
+
+/* CONTACT PAGE */
+/* Contact section */
+.contact-page__section {
+  padding: 5rem 0;
+}
+
+.contact__input {
+  width: 100%;
+  padding: 1.9rem 2.3rem;
+  margin: 1rem 0;
+}
+
+.contact__header {
+  text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+  .contact__row {
+    padding: 0 5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact__row {
+    padding: unset;
+  }
+
+  .contact-personal-info {
+    column-gap: 2rem;
+    display: flex;
+  }
+}
