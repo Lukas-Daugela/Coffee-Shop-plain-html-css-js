@@ -49,6 +49,13 @@ h3 {
   font-size: 2.5rem;
 }
 
+.page__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30rem;
+}
+
 /* General */
 .bg--images {
   background-size: cover;
@@ -781,6 +788,10 @@ a {
   box-shadow: unset;
 }
 
+.copyright__text {
+  margin-bottom: -2rem;
+}
+
 @media (min-width: 1024px) {
   .footer__col {
     width: 25%;
@@ -936,6 +947,10 @@ a {
 
 /* CONTACT PAGE */
 /* Contact section */
+.contact-page__header {
+  background-image: url(../images/contact_page_header_bg.jpg);
+}
+
 .contact-page__section {
   padding: 5rem 0;
 }

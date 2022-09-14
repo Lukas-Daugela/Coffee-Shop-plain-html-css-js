@@ -48,9 +48,6 @@
             <li class="nav-item">
                 <a href="#" class="nav-link">Contact</a>
             </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">About</a>
-            </li>
             </ul>
 
             <div class="shoping-cart__container">
@@ -88,11 +85,16 @@
       </div>
     </div>
 
+    <!-- Page header -->
+    <header class="page__header contact-page__header bg--images">
+      <h1>Contact</h1>
+    </header>
+
     <!-- Button with link to top of the page -->
     <a class="link-to-top" href="#">
-        <div class="link__container">
-          <i class="bi bi-arrow-up-short"></i>
-        </div>
+      <div class="link__container">
+        <i class="bi bi-arrow-up-short"></i>
+      </div>
     </a>
 
     <section class="contact-page__section">
@@ -106,17 +108,17 @@
           </div>
 
           <form class="col input__form" action="">
-              <div class="contact-personal-info ">
-                  <input type="text" class="contact__input name__input" placeholder="Your Name">
-                  <input type="text" class="contact__input email__input" placeholder="Your Email">
+            <div class="contact-personal-info ">
+              <input type="text" class="contact__input name__input" placeholder="Your Name">
+              <input type="text" class="contact__input email__input" placeholder="Your Email">
+            </div>
+            <div class="contact-other-info">
+              <input type="text" class="contact__input subject__input" placeholder="Subject">
+              <textarea class="contact__input message__input" cols="30" rows="5" placeholder="Message here..."></textarea>
+              <div>
+                <button class="btn btn--accent">Send message</button>
               </div>
-              <div class="contact-other-info">
-                <input type="text" class="contact__input subject__input" placeholder="Subject">
-                <textarea class="contact__input message__input" cols="30" rows="5" placeholder="Message here..."></textarea>
-                <div>
-                  <button class="btn btn--accent">Send message</button>
-                </div>
-              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -185,6 +187,8 @@
                 </div>
             </div>
             </div>
+
+            <p class="copyright__text text-center" id="copyright"></p>
         </div>
     </footer>
     

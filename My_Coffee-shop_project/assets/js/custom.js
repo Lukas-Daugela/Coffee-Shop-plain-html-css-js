@@ -14,6 +14,14 @@ document.querySelectorAll(".nav-link").forEach((link) =>
   })
 );
 
+// Current date for copyright footer
+let copyright = document.getElementById("copyright");
+let currentYear = new Date().getFullYear();
+
+copyright.innerHTML = `<p>
+  &#169 Copyright 2022 - ${currentYear} Lukas Daugėla
+</p>`;
+
 // Cart
 let cartIcon = document.querySelector(".shoping__cart");
 let cart = document.querySelector(".cart");
@@ -183,18 +191,18 @@ function updateTotal() {
     let cartBox = cartBoxes[i];
     let priceElmenet = cartBox.getElementsByClassName("cart__price")[0];
     let quantityElement = cartBox.getElementsByClassName("cart__quantity")[0];
-    let price = parseFloat(priceElmenet.innerHTML.replace("$", ""));
+    let price = parseFloat(priceElmenet.innerHTML.replace(" ", "€"));
     let quantity = quantityElement.value;
     total = total + price * quantity;
   }
   // if price contains some Cents value
   total = Math.round(total * 100) / 100;
-  document.getElementsByClassName("total__price")[0].innerHTML = "$" + total;
+  document.getElementsByClassName("total__price")[0].innerHTML = total + "€";
 }
 
 function checkTotal() {
   let totalPrice = document.getElementsByClassName("total__price")[0].innerHTML;
-  if (totalPrice === "$0") {
+  if (totalPrice === "0€") {
     return true;
   }
   return false;
