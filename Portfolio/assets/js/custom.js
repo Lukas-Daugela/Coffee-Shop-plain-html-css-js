@@ -54,7 +54,7 @@ function closeModal() {
   modal.style.display = "none";
 }
 
-// function to close modal if you clikc outside
+// function to close modal if you click outside
 function outsideClick(e) {
   if (e.target == modal) {
     modal.style.display = "none";

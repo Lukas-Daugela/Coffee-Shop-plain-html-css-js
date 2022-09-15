@@ -815,7 +815,7 @@ h2 {
 
 .project__cover {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
-  display: flex;
+  display: none;
   flex-direction: column;
   height: 100%;
   justify-content: center;
@@ -824,13 +824,17 @@ h2 {
   top: 0;
 }
 
+.project__wrapper:hover .project__cover {
+  display: flex;
+}
+
 .my-role {
   font-size: 1rem;
   font-style: italic;
   font-weight: 600;
   letter-spacing: 0.095em;
   line-height: 1.2rem;
-  margin-bottom: 2.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .project-name {
@@ -847,7 +851,7 @@ h2 {
   font-weight: 500;
   letter-spacing: -0.015em;
   line-height: 1.2rem;
-  margin: 2.5rem 0;
+  margin: 1.5rem 0;
 }
 
 .project__btn {
@@ -870,6 +874,7 @@ h2 {
 
 .section__projects .grid-cols-3 {
   grid-template-columns: 1fr;
+  row-gap: 2rem;
 }
 
 @media (min-width: 768px) {
@@ -878,13 +883,13 @@ h2 {
     max-width: 45rem;
   }
 
-  .project__cover {
+  /* .project__cover {
     display: none;
   }
 
   .project__wrapper:hover .project__cover {
     display: flex;
-  }
+  } */
 
   .section__projects {
     padding-top: 8.5rem;
@@ -898,10 +903,12 @@ h2 {
 @media (min-width: 1024px) {
   .project__description {
     font-size: 1.2rem;
+    margin: 2.5rem 0;
   }
 
   .my-role {
     font-size: 1.5rem;
+    margin-bottom: 2.7rem;
   }
 
   .project__img {
@@ -915,6 +922,12 @@ h2 {
 
   .projects__header-con {
     margin-bottom: 10.7rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section__projects .grid-cols-3 {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
