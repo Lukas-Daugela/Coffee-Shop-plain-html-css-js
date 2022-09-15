@@ -44,12 +44,14 @@ if (document.readyState == "loading") {
 } else ready();
 
 function ready() {
+  // Remove product from cart
   let removeCartButtons = document.getElementsByClassName("cart__remove");
   for (let i = 0; i < removeCartButtons.length; i++) {
     let button = removeCartButtons[i];
     button.addEventListener("click", removeCartItem);
   }
 
+  // Start product quantity number from 1 and dont let to go bellow 1
   let quantityInputs = document.getElementsByClassName("cart__quantity");
   for (let i = 0; i < quantityInputs.length; i++) {
     let input = quantityInputs[i];
