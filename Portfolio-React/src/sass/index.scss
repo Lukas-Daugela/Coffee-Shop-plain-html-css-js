@@ -1,0 +1,15 @@
+@charset "utf-8";
+
+@import 'vendor/normalize';
+@import 'base/index';
+@import 'mixins/index';
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
