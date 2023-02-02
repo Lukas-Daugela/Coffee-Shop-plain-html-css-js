@@ -5,7 +5,7 @@ import Button from './components/Button';
 function App() {
   return (
     <div className="app">
-      <Button />
+      <Button>Download cv</Button>
     </div>
   );
 }

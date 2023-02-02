@@ -4,13 +4,3 @@
 @import 'base/index';
 @import 'mixins/index';
 @import 'variables';
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-}

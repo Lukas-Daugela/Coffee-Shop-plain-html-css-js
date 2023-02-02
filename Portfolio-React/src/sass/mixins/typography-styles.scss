@@ -27,6 +27,13 @@ $body-sizes: (
   ),
 );
 
+$button-sizes: (
+  'medium': (
+    'sm': 1.3rem,
+    'lg': 1.5rem,
+  ),
+);
+
 @mixin map-sizes($text-sizes, $type) {
   @each $name, $sizes in $text-sizes {
     @if ($name == $type) {
@@ -53,4 +60,11 @@ $body-sizes: (
   font-family: var(--font-family-secondary);
   font-weight: $weight;
   @include map-sizes($body-sizes, $type);
+}
+
+@mixin button-styles($type, $color: var(--color-base), $weight: null) {
+  color: $color;
+  font-family: var(--font-family-tertiary);
+  font-weight: $weight;
+  @include map-sizes($button-sizes, $type);
 }
