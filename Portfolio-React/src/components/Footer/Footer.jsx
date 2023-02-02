@@ -12,24 +12,24 @@ export default function Footer() {
       <div className={cn('footer__container')}>
         <DoubleArrow />
         <button className={cn('footer__scroll-button')}>back to top</button>
-        <ul>
-          <li>
-            <a href="">
+        <ul className={cn('footer__icon-list')}>
+          <li className={cn('footer__list-items')}>
+            <a className={cn('footer__links')} href="">
               <FacebookIcon />
             </a>
           </li>
-          <li>
-            <a href="">
+          <li className={cn('footer__list-items')}>
+            <a className={cn('footer__links')} href="">
               <LinkedinIcon />
             </a>
           </li>
-          <li>
-            <a href="">
+          <li className={cn('footer__list-items')}>
+            <a className={cn('footer__links')} href="">
               <InstagramIcon />
             </a>
           </li>
-          <li>
-            <a href="">
+          <li className={cn('footer__list-items')}>
+            <a className={cn('footer__links')} href="">
               <EmailIcon />
             </a>
           </li>
