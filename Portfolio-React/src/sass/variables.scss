@@ -2,6 +2,7 @@
   /* Colors */
   --color-black: #000000;
   --color-dark: #1a1a1a;
+  --color-dark-shadow: #00000040;
 
   --color-white: #fff;
   --color-light: #ffffffe6;
@@ -21,7 +22,7 @@
     #ffffff;
 
   /* Base */
-  --color-primary: var(#000000);
+  --color-primary: var(--color-black);
   --color-secondary: var(--color-white);
   --color-accent: var(--color-gray-400);
   --color-base: var(--color-black);
