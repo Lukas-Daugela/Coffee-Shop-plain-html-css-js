@@ -1,15 +1,16 @@
+@import '../../sass/mixins/index';
+
 .footer {
-  align-items: center;
   background: var(--color-footer-bg);
   display: flex;
   justify-content: center;
+  max-height: 28.9rem;
 
   &__container {
-    align-items: center;
-    display: flex;
     flex-direction: column;
-    height: 32.6rem;
-    justify-content: center;
-    width: 20.4rem;
+    margin: 4.6rem 0;
+    max-width: 20.4rem;
+
+    @include flex-center;
   }
 }
