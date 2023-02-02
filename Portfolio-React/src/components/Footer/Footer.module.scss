@@ -1,0 +1,15 @@
+.footer {
+  align-items: center;
+  background: var(--color-footer-bg);
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 32.6rem;
+    justify-content: center;
+    width: 20.4rem;
+  }
+}
