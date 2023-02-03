@@ -22,12 +22,15 @@
   }
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .navigation {
   @include button-styles('medium', var(--color-secondary), 600);
 
   background-color: transparent;
   display: flex;
-  width: 100%;
 
   &--expanded {
     align-items: center;
@@ -37,6 +40,7 @@
     justify-content: center;
     position: fixed;
     text-align: center;
+    width: 100%;
     z-index: 1;
 
     @include media-query('md') {
@@ -129,6 +133,7 @@
 .nav-button {
   background-color: transparent;
   border: 0;
+  margin: 1rem 1rem 1rem auto;
   padding: 0.5rem;
   @include flex-center;
 
