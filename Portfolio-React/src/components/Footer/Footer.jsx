@@ -1,4 +1,5 @@
 import className from 'classnames/bind';
+import PropTypes from 'prop-types';
 import React from 'react';
 import { HashLink } from 'react-router-hash-link';
 
@@ -7,9 +8,9 @@ import { DoubleArrow, EmailIcon, FacebookIcon, InstagramIcon, LinkedinIcon } fro
 
 const cn = className.bind(styles);
 
-export default function Footer() {
+export default function Footer({ className }) {
   return (
-    <footer className={cn('footer')}>
+    <footer className={cn('footer', className)}>
       <div className={cn('footer__container')}>
         <DoubleArrow />
         <HashLink to="#top" smooth>
@@ -59,3 +60,7 @@ export default function Footer() {
     </footer>
   );
 }
+
+Footer.propTypes = {
+  className: PropTypes.string,
+};

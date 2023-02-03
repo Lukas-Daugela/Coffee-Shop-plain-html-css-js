@@ -1,13 +1,20 @@
+import className from 'classnames/bind';
 import React from 'react';
 
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
+import PageLayout from './layouts/PageLayout/PageLayout';
+import styles from './layouts/PageLayout/PageLayout.module.scss';
+
+const cn = className.bind(styles);
 
 function App() {
   return (
     <div className="app">
-      <Header />
-      <Footer />
+      <PageLayout>
+        <div className={cn('hero')}>This is Hero</div>
+        <div className={cn('sections')}>This is sections</div>
+        <div className={cn('sections')}>This is sections</div>
+        <div className={cn('sections')}>This is sections</div>
+      </PageLayout>
     </div>
   );
 }
