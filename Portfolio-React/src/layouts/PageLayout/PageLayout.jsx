@@ -19,7 +19,7 @@ export default function PageLayout({ children }) {
           </section>
         ))}
       </main>
-      <Footer className={cn('page-layout__footer')} />
+      <Footer />
     </div>
   );
 }
