@@ -1,14 +1,12 @@
 import React from 'react';
 
-import Button from './components/Button';
 import Footer from './components/Footer/Footer';
-import Navigation from './components/Navigation/Navigation';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div className="app">
-      <Navigation />
-      <Button>Download cv</Button>
+      <Header />
       <Footer />
     </div>
   );
