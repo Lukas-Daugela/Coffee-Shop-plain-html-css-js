@@ -28,9 +28,14 @@ $body-sizes: (
 );
 
 $button-sizes: (
-  'medium': (
+  'small': (
     'sm': 1.3rem,
     'lg': 1.5rem,
+  ),
+  'medium': (
+    'sm': 1.2rem,
+    'md': 1.5rem,
+    'lg': 1.7rem,
   ),
 );
 
