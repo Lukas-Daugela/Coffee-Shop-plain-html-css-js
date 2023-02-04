@@ -1,0 +1,8 @@
+@import '../../sass/mixins/index';
+
+.about {
+  @include flex-center;
+
+  flex-direction: column;
+  margin: 14.2rem 0 10.8rem;
+}
