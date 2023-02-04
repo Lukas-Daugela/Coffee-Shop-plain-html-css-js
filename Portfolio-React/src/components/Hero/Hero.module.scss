@@ -18,7 +18,6 @@
 
     @include media-query('md') {
       right: -19rem;
-      z-index: 1;
     }
     @include media-query('lg') {
       grid-column: 2 / -1;
