@@ -4,5 +4,10 @@
   @include flex-center;
 
   flex-direction: column;
-  margin: 14.2rem 0 10.8rem;
+  padding: 14.2rem 4rem 10.8rem;
+
+  @include media-query('lg') {
+    padding: 14.2rem 0 10.8rem;
+    @include section-container;
+  }
 }
