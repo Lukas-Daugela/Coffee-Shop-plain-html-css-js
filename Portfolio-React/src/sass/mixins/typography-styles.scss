@@ -1,21 +1,22 @@
 $heading-sizes: (
   'primary': (
+    'xsm': 3rem,
     'sm': 3.5rem,
-    'md': 5rem,
-    'lg': 6.5rem,
-    'xl': 8rem,
+    'md': 4.5rem,
+    'lg': 6rem,
+    'xxl': 8rem,
   ),
   'secondary': (
     'sm': 2rem,
     'md': 2.8rem,
     'lg': 3.5rem,
-    'xl': 4rem,
+    'xxl': 4rem,
   ),
   'tertiary': (
     'sm': 1.4rem,
     'md': 1.8rem,
     'lg': 2rem,
-    'xl': 2.5rem,
+    'xxl': 2.5rem,
   ),
 );
 

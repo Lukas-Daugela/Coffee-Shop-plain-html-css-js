@@ -5,11 +5,30 @@
   height: 100vh;
   position: relative;
 
+  @include media-query('md') {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   &__image {
     bottom: 0;
-    height: 80%;
+    height: 90%;
     object-fit: cover;
     position: absolute;
+
+    @include media-query('md') {
+      right: -19rem;
+      z-index: 1;
+    }
+    @include media-query('lg') {
+      grid-column: 2 / -1;
+      margin-top: auto;
+      position: static;
+    }
+
+    @include media-query('xxl') {
+      padding-right: 20rem;
+    }
   }
 
   &__text-wrapper {
@@ -18,13 +37,29 @@
     clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
     display: flex;
     justify-content: space-between;
-    padding: 5.1rem 3.2rem 4.2rem;
+    padding: 13.1rem 1.2rem 4.2rem;
     position: absolute;
     width: 100%;
+
+    @include media-query('xsm') {
+      padding: 5.1rem 3.2rem 4.2rem;
+    }
+
+    @include media-query('md') {
+      background: var(--color-hero-desktop-bg);
+      clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      width: 50%;
+    }
+
+    @include media-query('xl') {
+      padding-left: 10%;
+    }
   }
 
   &__text {
-    color: var(--color-secondary);
     display: flex;
     flex-direction: column;
   }
@@ -32,6 +67,16 @@
   &__icons-wrapper {
     display: grid;
     gap: 2.9rem;
+
+    @include media-query('md') {
+      display: flex;
+      gap: 3.1rem;
+      margin-top: 6rem;
+    }
+
+    @include media-query('xxl') {
+      margin-top: 13.7rem;
+    }
   }
 
   &::before {
@@ -39,9 +84,17 @@
     bottom: 0;
     clip-path: polygon(0 35%, 100% 0, 100% 100%, 0 100%);
     content: '';
-    height: 22.6rem;
+    height: 30.6rem;
     position: absolute;
     width: 100%;
+
+    @include media-query('xsm') {
+      height: 22.6rem;
+    }
+
+    @include media-query('md') {
+      display: none;
+    }
   }
 }
 
@@ -60,7 +113,17 @@
 
   &__profession {
     @include heading-styles('tertiary', 700, var(--color-secondary));
+    @include media-query('md') {
+      color: var(--color-accent);
+    }
 
     margin: 0;
+  }
+
+  &__greeting,
+  &__name {
+    @include media-query('md') {
+      color: var(--color-primary);
+    }
   }
 }
