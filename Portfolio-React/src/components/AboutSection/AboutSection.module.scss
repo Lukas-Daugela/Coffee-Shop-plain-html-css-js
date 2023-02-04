@@ -12,7 +12,7 @@
   }
 
   &__description {
-    margin: 3.8rem;
+    margin: 3.8rem 0;
     @include media-query('md') {
       margin: 7.1rem 0;
       text-align: center;
