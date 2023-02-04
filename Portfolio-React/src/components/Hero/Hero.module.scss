@@ -99,19 +99,34 @@
 
 .text {
   &__greeting {
-    @include heading-styles('secondary', 700, var(--color-secondary));
+    @include heading-styles(
+      'secondary',
+      700,
+      var(--color-secondary),
+      var(--font-family-primary)
+    );
 
     margin: auto 0 0;
   }
 
   &__name {
-    @include heading-styles('primary', 700, var(--color-secondary));
+    @include heading-styles(
+      'primary',
+      700,
+      var(--color-secondary),
+      var(--font-family-primary)
+    );
 
     margin: 0 0 0.4rem;
   }
 
   &__profession {
-    @include heading-styles('tertiary', 700, var(--color-secondary));
+    @include heading-styles(
+      'tertiary',
+      700,
+      var(--color-secondary),
+      var(--font-family-primary)
+    );
     @include media-query('md') {
       color: var(--color-accent);
     }

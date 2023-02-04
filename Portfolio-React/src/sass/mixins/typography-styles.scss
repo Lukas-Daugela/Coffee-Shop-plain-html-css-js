@@ -16,7 +16,7 @@ $heading-sizes: (
     'sm': 1.4rem,
     'md': 1.8rem,
     'lg': 2rem,
-    'xxl': 2.5rem,
+    'xxl': 3rem,
   ),
 );
 
@@ -59,9 +59,14 @@ $button-sizes: (
   }
 }
 
-@mixin heading-styles($type, $weight: 700, $color: var(--color-base)) {
+@mixin heading-styles(
+  $type,
+  $weight: 700,
+  $color: var(--color-base),
+  $font-family: var(--font-family-tertiary)
+) {
   color: $color;
-  font-family: var(--font-family-primary);
+  font-family: $font-family;
   font-weight: $weight;
   line-height: var(--line-height-heading);
   @include map-sizes($heading-sizes, $type);
