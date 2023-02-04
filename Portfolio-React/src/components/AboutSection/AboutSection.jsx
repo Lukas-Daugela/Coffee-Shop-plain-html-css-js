@@ -12,7 +12,7 @@ const { description } = text;
 
 export default function AboutSection() {
   return (
-    <div className={cn('about')}>
+    <div id="about" className={cn('about')}>
       <SectionsHeading>about me</SectionsHeading>
       <p className={cn('about__description')}>{description}</p>
       <HorizontalLine />
