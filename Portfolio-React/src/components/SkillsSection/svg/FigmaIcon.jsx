@@ -9,7 +9,7 @@ export default function FigmaIcon() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_1_767)">
+      <g clipPath="url(#clip0_1_767)">
         <path
           d="M17.3753 100C26.9632 100 34.7447 92.5335 34.7447 83.3335V66.6668H17.3753C7.78742 66.6668 0.00592041 74.1335 0.00592041 83.3335C0.00592041 92.5335 7.78742 100 17.3753 100Z"
           fill="#0ACF83"
