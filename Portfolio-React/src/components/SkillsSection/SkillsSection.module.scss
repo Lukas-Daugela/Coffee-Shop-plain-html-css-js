@@ -1,0 +1,18 @@
+@import '../../sass/mixins/index';
+
+.skills {
+  display: grid;
+  padding: 0 4rem;
+  text-align: center;
+
+  @include media-query('md') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include media-query('lg') {
+    @include section-container;
+
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0;
+  }
+}
