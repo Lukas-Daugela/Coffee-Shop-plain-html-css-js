@@ -12,9 +12,9 @@
   }
 
   &__description {
-    margin: 3.8rem 0;
+    margin: 0 0 3.8rem;
     @include media-query('md') {
-      margin: 7.1rem 0;
+      margin: 0 0 7.1rem;
       text-align: center;
     }
   }

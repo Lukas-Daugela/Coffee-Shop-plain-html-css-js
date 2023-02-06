@@ -13,7 +13,7 @@ export default function SectionPorfolio() {
 
   return (
     <div id="portfolio" className={cn('portfolio')}>
-      <SectionsHeading>projects</SectionsHeading>
+      <SectionsHeading type={'light'}>projects</SectionsHeading>
       <div
         className={cn(
           'portfolio__projects',

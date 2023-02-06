@@ -1,23 +1,36 @@
 @import '../../sass/mixins/index';
 
-.heading__wrapper {
+.heading {
   border: 8px solid var(--color-primary);
+  margin-bottom: 7rem;
   min-width: 21rem;
+
+  @include media-query('xxl') {
+    margin-bottom: 11rem;
+  }
 
   @include media-query('xxl') {
     min-width: 40.4rem;
   }
+
+  &__title {
+    letter-spacing: 0.36em;
+    margin: 0;
+    padding: 1.8rem 3.6rem;
+    text-align: center;
+    text-transform: uppercase;
+    @include heading-styles('tertiary', 700, var(--color-primary));
+
+    @include media-query('md') {
+      padding: 2.6rem 7.2rem;
+    }
+  }
+
+  &--light {
+    border-color: var(--color-secondary);
+  }
 }
 
-.heading__title {
-  letter-spacing: 0.36em;
-  margin: 0;
-  padding: 1.8rem 3.6rem;
-  text-align: center;
-  text-transform: uppercase;
-  @include heading-styles('tertiary', 700, var(--color-primary));
-
-  @include media-query('md') {
-    padding: 2.6rem 7.2rem;
-  }
+.title--light {
+  @include heading-styles('tertiary', 700, var(--color-secondary));
 }

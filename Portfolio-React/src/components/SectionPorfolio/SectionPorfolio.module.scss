@@ -3,11 +3,13 @@
 .portfolio {
   background: var(--color-dark);
   flex-direction: column;
-  padding: 9.7rem 0 6.2rem;
+  margin: 9.7rem 0 6.2rem;
+  padding: 6.3rem 0 1.8rem;
   @include flex-center;
 
   @include media-query('md') {
-    padding: 16.2rem 0 14.2rem;
+    margin: 16.2rem 0 14.2rem;
+    padding: 10.7rem 0 2.3rem;
   }
 
   &__projects {

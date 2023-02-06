@@ -2,7 +2,7 @@
 
 .skills {
   display: grid;
-  padding: 8rem 4rem 0;
+  padding: 0 4rem;
   row-gap: 7.1rem;
   text-align: center;
 
@@ -21,7 +21,7 @@
     @include section-container;
 
     grid-template-columns: repeat(3, 1fr);
-    padding: 8rem 0 0;
+    padding: 0;
   }
 
   @include media-query('xl') {

@@ -6,14 +6,15 @@ import styles from './SectionsHeading.module.scss';
 
 const cn = className.bind(styles);
 
-export default function SectionsHeading({ children }) {
+export default function SectionsHeading({ children, type }) {
   return (
-    <div className={cn('heading__wrapper')}>
-      <h2 className={cn('heading__title')}>{children}</h2>
+    <div className={cn('heading', type && `heading--${type}`)}>
+      <h2 className={cn('heading__title', type && `title--${type}`)}>{children}</h2>
     </div>
   );
 }
 
 SectionsHeading.propTypes = {
   children: PropTypes.string.isRequired,
+  type: PropTypes.string,
 };
