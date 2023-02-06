@@ -32,7 +32,6 @@ function App() {
           autoComplete="given-name"
           placeholder={'Add you name'}
           required
-          error="Required"
         />
       </PageLayout>
     </div>
