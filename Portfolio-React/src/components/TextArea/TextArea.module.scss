@@ -1,0 +1,21 @@
+@import '../../sass/mixins/index';
+
+.text-input {
+  @include wrapper;
+
+  &__field {
+    @include field;
+
+    &:focus {
+      @include focus;
+    }
+
+    &--has-error {
+      @include has-error;
+    }
+  }
+
+  &__error-msg {
+    @include error-msg;
+  }
+}
