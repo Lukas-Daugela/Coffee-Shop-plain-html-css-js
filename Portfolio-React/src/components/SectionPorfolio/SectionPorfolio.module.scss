@@ -28,4 +28,9 @@
       max-width: 110rem;
     }
   }
+
+  &__promise {
+    margin-top: 2.3rem;
+    @include heading-styles('tertiary', 600, var(--color-secondary));
+  }
 }

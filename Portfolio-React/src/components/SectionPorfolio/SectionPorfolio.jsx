@@ -24,6 +24,7 @@ export default function SectionPorfolio() {
           <MyProject key={index} information={information} />
         ))}
       </div>
+      <span className={cn('portfolio__promise')}>And many more to come!</span>
     </div>
   );
 }
