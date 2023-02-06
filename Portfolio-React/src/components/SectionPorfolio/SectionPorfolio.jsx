@@ -20,7 +20,7 @@ export default function SectionPorfolio({ children, alt }) {
             <span className={cn('project__role')}>coded and designed</span>
             <h3 className={cn('project__title')}>Sourcery Academy</h3>
             <p className={cn('project__description')}>Sourcery Akademy website</p>
-            <div className={cn('project_button-wrapper')}>
+            <div className={cn('project__button-wrapper')}>
               <Button type={'light'}>demo</Button>
               <Button type={'light'}>src code</Button>
             </div>

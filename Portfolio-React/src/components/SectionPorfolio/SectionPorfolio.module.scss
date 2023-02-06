@@ -64,4 +64,9 @@
     font-weight: 500;
     margin-bottom: 2.6rem;
   }
+
+  &__button-wrapper {
+    display: flex;
+    gap: 1rem;
+  }
 }
