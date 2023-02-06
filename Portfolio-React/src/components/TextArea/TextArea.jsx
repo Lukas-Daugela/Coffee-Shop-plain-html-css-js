@@ -6,15 +6,7 @@ import styles from './TextArea.module.scss';
 
 const cn = className.bind(styles);
 
-export default function TextArea({
-  name,
-  placeholder,
-  onBlur,
-  value,
-  required,
-  error,
-  autoComplete,
-}) {
+export default function TextArea({ name, placeholder, onBlur, value, required, error }) {
   return (
     <div className={cn('text-input')}>
       <textarea
@@ -31,7 +23,6 @@ export default function TextArea({
         })}
         required={required}
         aria-describedby={`${name}-error`}
-        autoComplete={autoComplete}
       />
       {error && (
         <span id={`${name}-error`} className={cn('text-input__error-msg')}>
@@ -49,5 +40,4 @@ TextArea.propTypes = {
   value: PropTypes.string,
   required: PropTypes.bool,
   error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  autoComplete: PropTypes.string,
 };
