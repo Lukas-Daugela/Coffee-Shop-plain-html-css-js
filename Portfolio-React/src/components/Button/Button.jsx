@@ -6,10 +6,13 @@ import styles from './Button.module.scss';
 
 const cn = className.bind(styles);
 
-export default function Button({ children }) {
-  return <button className={cn('btn')}>{children}</button>;
+// By default button will be dark
+// To get light button pass the prop "type="light""
+export default function Button({ children, type }) {
+  return <button className={cn('btn', `btn__${type}`)}>{children}</button>;
 }
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
+  type: PropTypes.string,
 };
