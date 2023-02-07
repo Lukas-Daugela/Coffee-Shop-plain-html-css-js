@@ -3,6 +3,7 @@
 .contact-form {
   display: grid;
   gap: 4rem;
+  width: 100%;
 
   @include media-query('md') {
     gap: 5.5rem;

@@ -1,8 +1,10 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-export default function HorizontalLine() {
+export default function HorizontalLine({ className }) {
   return (
     <svg
+      className={className}
       width="170"
       height="12"
       viewBox="0 0 170 12"
@@ -29,3 +31,7 @@ export default function HorizontalLine() {
     </svg>
   );
 }
+
+HorizontalLine.propTypes = {
+  className: PropTypes.string,
+};
