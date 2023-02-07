@@ -1,22 +1,17 @@
 import className from 'classnames/bind';
 import { Form, Formik } from 'formik';
 import PropTypes from 'prop-types';
-import React, { useRef } from 'react';
+import React from 'react';
 
 import Button from '../Button';
 import TextArea from '../TextArea';
 import TextInput from '../TextInput';
 import styles from './ContactForm.module.scss';
-import withValidation from './withValidation';
+import { validationSchema } from './validation/validationSchema';
 
 const cn = className.bind(styles);
 
-const FieldTextInput = withValidation(TextInput);
-const FieldTextArea = withValidation(TextArea);
-
 export default function ContactForm({ texts }) {
-  const formikInnerRef = useRef();
-
   const initialValues = {
     firstName: '',
     email: '',
@@ -24,42 +19,22 @@ export default function ContactForm({ texts }) {
     message: '',
   };
 
-  const { firstNameText, phoneNumber, email, message } = texts;
-
-  const handleOnSubmit = (values) => {
-    const formData = new FormData();
-    Object.entries(values).forEach(([key, value]) => formData.append(key, value));
-  };
+  const { firstNameText, email, phoneNumber, message } = texts;
 
   return (
-    <Formik
-      innerRef={formikInnerRef}
-      initialValues={initialValues}
-      onSubmit={handleOnSubmit}
-      // validationSchema={validationSchema}
-    >
-      {({ handleSubmit }) => (
+    <Formik initialValues={initialValues} validationSchema={validationSchema}>
+      {() => (
         <Form className={cn('contact-form')}>
-          <FieldTextInput
+          <TextInput
             name="firstName"
-            autoComplete="given-name"
+            type="text"
             placeholder={firstNameText.placeholder}
-            required
           />
-          <FieldTextInput
-            name="email"
-            autoComplete="email"
-            placeholder={email.placeholder}
-            required
-          />
-          <FieldTextInput
-            name="phone"
-            autoComplete="phone-number"
-            placeholder={phoneNumber.placeholder}
-          />
-          <FieldTextArea name="message" placeholder={message.placeholder} required />
+          <TextInput name="email" type="text" placeholder={email.placeholder} />
+          <TextInput name="phone" type="number" placeholder={phoneNumber.placeholder} />
+          <TextArea name="message" placeholder={message.placeholder} />
           <div className={cn('contact-form__button-wrapper')}>
-            <Button onClick={handleSubmit}>Send</Button>
+            <Button>Send</Button>
           </div>
         </Form>
       )}
@@ -68,6 +43,5 @@ export default function ContactForm({ texts }) {
 }
 
 ContactForm.propTypes = {
-  // onSubmit: PropTypes.func.isRequired,
   texts: PropTypes.object.isRequired,
 };
