@@ -27,11 +27,22 @@ export default function ContactForm({ texts }) {
         <Form className={cn('contact-form')}>
           <TextInput
             name="firstName"
+            autoComplete="given-name"
             type="text"
             placeholder={firstNameText.placeholder}
           />
-          <TextInput name="email" type="text" placeholder={email.placeholder} />
-          <TextInput name="phone" type="number" placeholder={phoneNumber.placeholder} />
+          <TextInput
+            name="email"
+            autoComplete="email"
+            type="text"
+            placeholder={email.placeholder}
+          />
+          <TextInput
+            name="phone"
+            type="tel"
+            autoComplete="tel"
+            placeholder={phoneNumber.placeholder}
+          />
           <TextArea name="message" placeholder={message.placeholder} />
           <div className={cn('contact-form__button-wrapper')}>
             <Button>Send</Button>
