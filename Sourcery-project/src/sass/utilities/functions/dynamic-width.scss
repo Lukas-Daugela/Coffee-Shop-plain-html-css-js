@@ -1,3 +1,0 @@
-@function dynamic-width($columns, $gap, $width: 100%) {
-  @return calc(($width - ($gap * ($columns - 1))) / $columns);
-}
