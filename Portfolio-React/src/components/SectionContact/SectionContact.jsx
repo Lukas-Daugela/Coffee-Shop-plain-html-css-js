@@ -3,6 +3,7 @@ import React from 'react';
 import { useState } from 'react';
 
 import { HorizontalLine } from '../../../public/assets/svg';
+import { ContactContext } from '../../context/ContactContext';
 import ContactForm from '../ContactForm';
 import SectionsHeading from '../SectionsHeading';
 import styles from './SectionContact.module.scss';
@@ -11,9 +12,7 @@ import { formTexts } from './texts';
 const cn = className.bind(styles);
 
 export default function SectionContact() {
-  const { submited, setSubmited } = useState(false);
-
-  console.log(setSubmited);
+  const [submited, setSubmited] = useState(false);
 
   return (
     <div id="contact" className={cn('contact')}>
@@ -23,10 +22,25 @@ export default function SectionContact() {
         form or via social media.
       </p>
       <HorizontalLine className={cn('contact__hr')} />
-      <div className={cn('contact__form-wrapper')}>
-        {!submited && <ContactForm texts={formTexts} />}
-        {/* {submited && <SuccessMessage/>} */}
-      </div>
+      <ContactContext.Provider
+        value={{
+          setSubmited: () => {
+            setSubmited(true);
+          },
+        }}
+      >
+        <div className={cn('contact__form-wrapper')}>
+          {!submited && <ContactForm texts={formTexts} />}
+          {submited && (
+            <div className={cn('success-message')}>
+              <h3 className={cn('success-message__gratitude')}>Thank you!</h3>
+              <p className={cn('success-message__confirmation')}>
+                Your message has been sent
+              </p>
+            </div>
+          )}
+        </div>
+      </ContactContext.Provider>
     </div>
   );
 }

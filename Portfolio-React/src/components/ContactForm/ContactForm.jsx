@@ -3,8 +3,10 @@ import className from 'classnames/bind';
 import { Form, Formik } from 'formik';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { useContext } from 'react';
 import { useRef } from 'react';
 
+import { ContactContext } from '../../context/ContactContext';
 import Button from '../Button';
 import TextArea from '../TextArea';
 import TextInput from '../TextInput';
@@ -22,6 +24,7 @@ export default function ContactForm({ texts }) {
   };
 
   const { firstNameText, email, phoneNumber, message } = texts;
+  const { setSubmited } = useContext(ContactContext);
 
   const form = useRef();
 
@@ -42,6 +45,7 @@ export default function ContactForm({ texts }) {
             console.log(error.text);
           },
         );
+      setSubmited();
     }, 1000);
   };
 

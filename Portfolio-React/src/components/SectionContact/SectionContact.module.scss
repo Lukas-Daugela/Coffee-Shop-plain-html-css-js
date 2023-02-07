@@ -24,3 +24,17 @@
     width: 100%;
   }
 }
+
+.success-message {
+  @include flex-center;
+
+  flex-direction: column;
+
+  &__gratitude {
+    @include heading-styles('secondary', 700, var(--color-primary));
+  }
+
+  &__confirmation {
+    margin: 0;
+  }
+}
