@@ -1,0 +1,14 @@
+{
+  "firstNameText": {
+    "placeholder": "Enter your first name*"
+  },
+  "email": {
+    "placeholder": "Enter your email*"
+  },
+  "phoneNumber": {
+    "placeholder": "Enter your phone number"
+  },
+  "message": {
+    "placeholder": "Enter your message*"
+  }
+}

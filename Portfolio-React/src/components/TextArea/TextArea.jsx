@@ -1,4 +1,5 @@
 import className from 'classnames/bind';
+import { useField } from 'formik';
 import PropTypes from 'prop-types';
 import React from 'react';
 
@@ -6,38 +7,25 @@ import styles from './TextArea.module.scss';
 
 const cn = className.bind(styles);
 
-export default function TextArea({
-  name,
-  placeholder,
-  onBlur,
-  value,
-  required,
-  error,
-  autoComplete,
-}) {
+export default function TextArea({ placeholder, ...props }) {
+  const [field, meta] = useField(props);
+
+  const error = meta.touched && meta.error;
+
   return (
     <div className={cn('text-input')}>
       <textarea
         rows={10}
         cols={40}
-        type="text"
-        name={name}
-        id={name}
+        {...field}
+        {...props}
         placeholder={placeholder}
-        onBlur={onBlur}
-        value={value}
         className={cn('text-input__field', {
           'text-input__field--has-error': error,
         })}
-        required={required}
-        aria-describedby={`${name}-error`}
-        autoComplete={autoComplete}
+        aria-describedby={`${field.name}-error`}
       />
-      {error && (
-        <span id={`${name}-error`} className={cn('text-input__error-msg')}>
-          {error}
-        </span>
-      )}
+      {error && <span className={cn('text-input__error-msg')}>{meta.error}</span>}
     </div>
   );
 }
@@ -45,9 +33,6 @@ export default function TextArea({
 TextArea.propTypes = {
   name: PropTypes.string.isRequired,
   placeholder: PropTypes.string,
-  onBlur: PropTypes.func.isRequired,
   value: PropTypes.string,
   required: PropTypes.bool,
-  error: PropTypes.oneOfType([PropTypes.string, PropTypes.bool]),
-  autoComplete: PropTypes.string,
 };

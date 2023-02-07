@@ -1,18 +1,24 @@
 // import className from 'classnames/bind';
 import React from 'react';
+import { useState } from 'react';
 
 import AboutSection from './components/AboutSection/AboutSection';
+import ContactForm from './components/ContactForm';
 import Hero from './components/Hero';
 import SectionPorfolio from './components/SectionPorfolio/SectionPorfolio';
 import SkillsSection from './components/SkillsSection';
-import TextArea from './components/TextArea/TextArea';
-import TextInput from './components/TextInput/TextInput';
 import PageLayout from './layouts/PageLayout/PageLayout';
+import { formTexts } from './texts';
 // import styles from './layouts/PageLayout/PageLayout.module.scss';
 
 // const cn = className.bind(styles);
 
 function App() {
+  const { isSubmited, setIsSubmited } = useState(false);
+
+  const handleIsSubmited = () => {
+    setIsSubmited(true);
+  };
   return (
     <div className="app">
       <PageLayout>
@@ -20,19 +26,7 @@ function App() {
         <AboutSection />
         <SkillsSection />
         <SectionPorfolio />
-        <TextInput
-          name="firstName"
-          autoComplete="given-name"
-          placeholder={'Add you name'}
-          required
-          error="Required"
-        />
-        <TextArea
-          name="firstName"
-          autoComplete="given-name"
-          placeholder={'Add you name'}
-          required
-        />
+        {!isSubmited && <ContactForm onSubmit={handleIsSubmited} texts={formTexts} />}
       </PageLayout>
     </div>
   );

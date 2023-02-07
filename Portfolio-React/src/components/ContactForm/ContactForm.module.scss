@@ -1,0 +1,14 @@
+@import '../../sass/mixins/index';
+
+.contact-form {
+  display: grid;
+  gap: 4rem;
+
+  @include media-query('md') {
+    gap: 5.5rem;
+  }
+
+  &__button-wrapper {
+    text-align: center;
+  }
+}

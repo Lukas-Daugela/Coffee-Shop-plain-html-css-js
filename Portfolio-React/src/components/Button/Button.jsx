@@ -8,11 +8,20 @@ const cn = className.bind(styles);
 
 // By default button will be dark
 // To get light button pass the prop "type="light""
-export default function Button({ children, type }) {
-  return <button className={cn('btn', `btn__${type}`)}>{children}</button>;
+export default function Button({ children, type, btnType }) {
+  return (
+    <button type={btnType} className={cn('btn', `btn__${type}`)}>
+      {children}
+    </button>
+  );
 }
+
+Button.defaultProps = {
+  type: 'button',
+};
 
 Button.propTypes = {
   children: PropTypes.node.isRequired,
+  btnType: PropTypes.oneOf(['submit', 'button']),
   type: PropTypes.string,
 };

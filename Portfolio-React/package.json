@@ -10,10 +10,13 @@
     "lint": "npm run lint:format && npm run lint:fix "
   },
   "dependencies": {
+    "@emailjs/browser": "^3.10.0",
+    "formik": "^2.2.9",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-router-dom": "6.4.3",
-    "react-router-hash-link": "^2.4.3"
+    "react-router-hash-link": "^2.4.3",
+    "yup": "^0.32.11"
   },
   "devDependencies": {
     "@modyqyw/vite-plugin-eslint": "3.1.5",
