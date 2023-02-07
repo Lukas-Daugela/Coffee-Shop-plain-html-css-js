@@ -1,7 +1,9 @@
+import emailjs from '@emailjs/browser';
 import className from 'classnames/bind';
 import { Form, Formik } from 'formik';
 import PropTypes from 'prop-types';
 import React from 'react';
+import { useRef } from 'react';
 
 import Button from '../Button';
 import TextArea from '../TextArea';
@@ -21,10 +23,36 @@ export default function ContactForm({ texts }) {
 
   const { firstNameText, email, phoneNumber, message } = texts;
 
+  const form = useRef();
+
+  const handleOnSubmit = () => {
+    setTimeout(() => {
+      emailjs
+        .sendForm(
+          'service_ueykc86',
+          'template_nrrqyif',
+          form.current,
+          'Xdk_6M9YtTH70DdNO',
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          },
+        );
+    }, 1000);
+  };
+
   return (
-    <Formik initialValues={initialValues} validationSchema={validationSchema}>
-      {() => (
-        <Form className={cn('contact-form')}>
+    <Formik
+      initialValues={initialValues}
+      validationSchema={validationSchema}
+      onSubmit={handleOnSubmit}
+    >
+      {(handleSubmit) => (
+        <Form ref={form} className={cn('contact-form')}>
           <TextInput
             name="firstName"
             autoComplete="given-name"
@@ -45,7 +73,9 @@ export default function ContactForm({ texts }) {
           />
           <TextArea name="message" placeholder={message.placeholder} />
           <div className={cn('contact-form__button-wrapper')}>
-            <Button>Send</Button>
+            <Button onClick={handleSubmit} btnType="submit">
+              Send
+            </Button>
           </div>
         </Form>
       )}
