@@ -1,0 +1,11 @@
+@import '../../sass/mixins/index';
+
+.header {
+  @include media-query('md') {
+    align-items: center;
+    display: flex;
+    justify-content: end;
+    min-height: 6.6rem;
+    width: 100%;
+  }
+}

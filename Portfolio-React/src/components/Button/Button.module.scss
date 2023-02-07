@@ -1,0 +1,50 @@
+@import '../../sass/mixins/index';
+
+.btn {
+  $active-bg-color: var(--color-black);
+  $hover-bg-color: var(--color-dark);
+  $active-color: var(--color-white);
+  $light-hover-bg: var(--color-white);
+  $light-active-color: var(--color-black);
+
+  background-color: transparent;
+  border-color: var(--color-black);
+  border-style: solid;
+  border-width: 0 3px;
+  height: 3.2rem;
+  min-width: 11.4rem;
+  padding: 0 1.8rem;
+  text-transform: uppercase;
+  transition: background-color 0.6s linear, color 0.6s;
+  @include button-styles('small', var(--color-black), 600);
+
+  &:hover {
+    background-color: $hover-bg-color;
+    color: $active-color;
+  }
+
+  &:focus-visible {
+    background-color: $active-bg-color;
+    border: 0;
+    color: $active-color;
+    outline: 4px dashed var(--color-orange);
+  }
+
+  &__light {
+    @include button-styles('small', var(--color-white), 600);
+
+    border-color: var(--color-white);
+
+    &:hover {
+      background-color: $light-hover-bg;
+      color: $light-active-color;
+    }
+
+    &:focus-visible {
+      background-color: $light-hover-bg;
+      border: 0;
+      color: $light-active-color;
+      outline: 4px dashed var(--color-orange);
+    }
+  }
+}

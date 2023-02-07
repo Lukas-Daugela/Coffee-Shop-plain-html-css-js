@@ -1,0 +1,14 @@
+@import '../../sass/mixins/index';
+
+.card {
+  margin: 0;
+
+  &__name {
+    font-family: var(--font-family-tertiary);
+    font-size: 2.4rem;
+    font-weight: 400;
+    letter-spacing: 0.36em;
+    margin-top: 2rem;
+    text-transform: uppercase;
+  }
+}

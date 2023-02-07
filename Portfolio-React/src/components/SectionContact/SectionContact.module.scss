@@ -1,0 +1,40 @@
+@import '../../sass/mixins/index';
+
+.contact {
+  @include flex-center;
+
+  flex-direction: column;
+  padding: 0 4rem 6rem;
+
+  @include media-query('lg') {
+    padding: 0 0 6.8rem;
+    @include section-container;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &__hr {
+    margin: 2.4rem 0 12.2rem;
+  }
+
+  &__form-wrapper {
+    max-width: 61rem;
+    width: 100%;
+  }
+}
+
+.success-message {
+  @include flex-center;
+
+  flex-direction: column;
+
+  &__gratitude {
+    @include heading-styles('secondary', 700, var(--color-primary));
+  }
+
+  &__confirmation {
+    margin: 0;
+  }
+}

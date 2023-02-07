@@ -1,0 +1,36 @@
+@import '../../sass/mixins/index';
+
+.portfolio {
+  background: var(--color-dark);
+  flex-direction: column;
+  margin: 9.7rem 0 6.2rem;
+  padding: 6.3rem 0 1.8rem;
+  @include flex-center;
+
+  @include media-query('md') {
+    margin: 16.2rem 0 14.2rem;
+    padding: 10.7rem 0 2.3rem;
+  }
+
+  &__projects {
+    @include media-query('md') {
+      display: grid;
+      gap: 3rem;
+      grid-auto-rows: 40rem;
+      margin: 0 auto;
+      max-width: 64rem;
+    }
+  }
+
+  &__multiple-projects {
+    @include media-query('xl') {
+      grid-template-columns: repeat(2, 1fr);
+      max-width: 110rem;
+    }
+  }
+
+  &__promise {
+    margin-top: 2.3rem;
+    @include heading-styles('tertiary', 600, var(--color-secondary));
+  }
+}

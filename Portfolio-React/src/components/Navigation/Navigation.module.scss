@@ -1,0 +1,145 @@
+@import '../../sass/mixins/index';
+
+@keyframes nav-wrapper-in {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes nav-element-in {
+  from {
+    opacity: 0;
+    transform: translateY(-50%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.navigation {
+  @include button-styles('medium', var(--color-secondary), 600);
+
+  background-color: transparent;
+  display: flex;
+
+  &--expanded {
+    align-items: center;
+    background-color: var(--color-gray-500);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+
+    @include media-query('md') {
+      align-items: baseline;
+      flex-direction: row;
+      position: static;
+      width: auto;
+    }
+  }
+
+  &--closed {
+    display: none;
+
+    @include media-query('md') {
+      display: flex;
+    }
+  }
+
+  &__wrapper {
+    @include reset-list-style;
+
+    animation: nav-wrapper-in 0.5s ease;
+    text-align: center;
+    width: inherit;
+
+    @include media-query('md') {
+      align-items: center;
+      animation: none;
+      border-radius: 0;
+      display: flex;
+      gap: 0.8rem;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__link {
+    color: var(--color-secondary);
+    height: 100%;
+    text-decoration: none;
+    width: 100%;
+    @include flex-center;
+
+    &:active {
+      color: var(--color-primary);
+    }
+  }
+
+  &__option:hover &__link {
+    transition: color 0.5s ease-in-out;
+    @include media-query('md') {
+      color: var(--color-primary);
+    }
+  }
+
+  &__option {
+    align-items: center;
+    animation: nav-element-in 0.5s ease forwards;
+    cursor: pointer;
+    justify-content: center;
+    opacity: 0;
+    padding: 2.1rem 0;
+    @include button-styles('medium', var(--color-secondary));
+
+    &:active {
+      background-color: var(--color-secondary);
+    }
+
+    &:nth-child(n) {
+      animation-delay: 0.4s;
+    }
+
+    @include media-query('md') {
+      animation: none;
+      border-radius: 3rem;
+      display: flex;
+      flex-direction: row;
+      height: 4.6rem;
+      min-width: 14.7rem;
+      opacity: 1;
+      padding: 0;
+      text-decoration: none;
+      transition: background-color 0.5s ease-in-out;
+
+      &:hover {
+        background-color: var(--color-white);
+      }
+    }
+  }
+}
+
+.nav-button {
+  background-color: transparent;
+  border: 0;
+  margin: 1rem 1rem 1rem auto;
+  padding: 0.5rem;
+  @include flex-center;
+
+  @include media-query('md') {
+    display: none;
+  }
+}

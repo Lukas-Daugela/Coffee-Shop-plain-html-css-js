@@ -1,0 +1,32 @@
+@import '../../sass/mixins/index';
+
+.btn {
+  $hover-bg-color: var(--color-white);
+  $mobile-fill: var(--color-white);
+
+  background: transparent;
+  border: unset;
+  fill: $mobile-fill;
+  height: 2.5rem;
+  padding: 0;
+  width: 2.5rem;
+
+  @include media-query('md') {
+    background: var(--color-hero-icons-bg);
+    box-shadow: 0 4px 4px var(--color-dark-shadow);
+    fill: unset;
+    height: 5.6rem;
+    padding: 1rem 1.2rem;
+    transition: background-color 0.6s linear;
+    width: 6.1rem;
+
+    &:hover {
+      background-color: $hover-bg-color;
+    }
+
+    &:focus-visible {
+      background-color: $hover-bg-color;
+      outline: 4px dashed var(--color-orange);
+    }
+  }
+}
