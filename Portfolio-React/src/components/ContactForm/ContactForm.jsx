@@ -74,7 +74,7 @@ export default function ContactForm({ texts }) {
           <TextArea name="message" placeholder={message.placeholder} />
           <div className={cn('contact-form__button-wrapper')}>
             <Button onClick={handleSubmit} btnType="submit">
-              Send
+              Submit
             </Button>
           </div>
         </Form>
