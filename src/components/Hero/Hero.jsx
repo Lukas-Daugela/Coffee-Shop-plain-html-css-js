@@ -19,10 +19,10 @@ export default function Hero() {
           <p className={cn('text__profession')}>Front-end Web Developer</p>
         </div>
         <div className={cn('hero__icons-wrapper')}>
-          <HeroButton hashLink={'#about'}>
+          <HeroButton hashLink={'#contact'}>
             <EmailIcon />
           </HeroButton>
-          <HeroButton link={'https://github.com/Lukas-Daugela/Lukas-Daugela.github.io'}>
+          <HeroButton link={'https://github.com/Lukas-Daugela'}>
             <GitIcon />
           </HeroButton>
           <HeroButton link={'https://www.linkedin.com/in/lukas-daugela/'}>
