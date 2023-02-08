@@ -25,20 +25,20 @@ export default function SectionSkills() {
         <SkillCard name="html5">
           <HtmlIcon />
         </SkillCard>
-        <SkillCard name="git">
-          <GitIcon />
-        </SkillCard>
-        <SkillCard name="react">
-          <ReactIcon />
-        </SkillCard>
         <SkillCard name="css3">
           <CssIcon />
+        </SkillCard>
+        <SkillCard name="javascript">
+          <JavaScriptIcon />
         </SkillCard>
         <SkillCard name="sass">
           <SassIcon />
         </SkillCard>
-        <SkillCard name="javascript">
-          <JavaScriptIcon />
+        <SkillCard name="react">
+          <ReactIcon />
+        </SkillCard>
+        <SkillCard name="git">
+          <GitIcon />
         </SkillCard>
         <SkillCard name="figma">
           <FigmaIcon />
