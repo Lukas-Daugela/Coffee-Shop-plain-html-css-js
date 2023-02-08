@@ -2,12 +2,15 @@
 
 .hero {
   background-color: var(--color-primary);
+  display: flex;
   height: 100vh;
+  justify-content: center;
   position: relative;
 
   @include media-query('md') {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    overflow: hidden;
   }
 
   &__image {
