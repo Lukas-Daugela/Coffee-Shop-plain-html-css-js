@@ -5,7 +5,7 @@ import AboutSection from './components/AboutSection/AboutSection';
 import Hero from './components/Hero';
 import SectionContact from './components/SectionContact/SectionContact';
 import SectionPorfolio from './components/SectionPorfolio/SectionPorfolio';
-import SkillsSection from './components/SkillsSection';
+import SectionSkills from './components/SectionSkills';
 import PageLayout from './layouts/PageLayout/PageLayout';
 // import styles from './layouts/PageLayout/PageLayout.module.scss';
 
@@ -17,7 +17,7 @@ function App() {
       <PageLayout>
         <Hero />
         <AboutSection />
-        <SkillsSection />
+        <SectionSkills />
         <SectionPorfolio />
         <SectionContact />
       </PageLayout>
