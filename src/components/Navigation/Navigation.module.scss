@@ -1,15 +1,5 @@
 @import '../../sass/mixins/index';
 
-@keyframes nav-wrapper-in {
-  from {
-    transform: translateY(-100%);
-  }
-
-  to {
-    transform: translateY(0%);
-  }
-}
-
 @keyframes nav-element-in {
   from {
     opacity: 0;
@@ -73,10 +63,6 @@
       margin: 0;
       padding: 0;
     }
-  }
-
-  &--expanded &__wrapper {
-    animation: nav-wrapper-in 0.5s linear;
   }
 
   &__link {
