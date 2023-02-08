@@ -3,7 +3,7 @@ import React from 'react';
 
 import SectionsHeading from '../SectionsHeading';
 import SkillCard from '../SkillCard';
-import styles from './SkillsSection.module.scss';
+import styles from './SectionSkills.module.scss';
 import {
   BootstrapIcon,
   CssIcon,
@@ -17,7 +17,7 @@ import {
 
 const cn = className.bind(styles);
 
-export default function SkillsSection() {
+export default function SectionSkills() {
   return (
     <div id="skills" className={cn('skills__wrapper')}>
       <SectionsHeading>skills</SectionsHeading>
