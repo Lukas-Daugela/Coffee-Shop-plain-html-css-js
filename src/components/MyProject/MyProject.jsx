@@ -18,10 +18,10 @@ export default function MyProject({ information }) {
         <h3 className={cn('project__title')}>{title}</h3>
         <p className={cn('project__description')}>{description}</p>
         <div className={cn('project__button-wrapper')}>
-          <a href={demoUrl}>
+          <a target="_blank" href={demoUrl} rel="noreferrer">
             <Button type={'light'}>demo</Button>
           </a>
-          <a href={repositoryUrl}>
+          <a target="_blank" href={repositoryUrl} rel="noreferrer">
             <Button type={'light'}>src code</Button>
           </a>
         </div>

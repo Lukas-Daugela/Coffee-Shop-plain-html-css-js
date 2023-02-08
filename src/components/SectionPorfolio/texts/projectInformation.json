@@ -1,10 +1,10 @@
 [
   {
-    "illustration": "assets/images/first-project.jpg",
+    "illustration": "assets/images/sourcery-project.jpg",
     "role": "coded and designed",
     "title": "Sourcery Academy",
     "description": "Sourcery Academy website",
-    "demoUrl": "",
-    "repositoryUrl": ""
+    "demoUrl": "https://sourcery-project.vercel.app/",
+    "repositoryUrl": "https://github.com/Lukas-Daugela/Sourcery-project"
   }
 ]
