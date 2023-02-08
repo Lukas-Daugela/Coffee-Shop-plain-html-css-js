@@ -1,4 +1,5 @@
 import * as yup from 'yup';
+
 import { ERROR_MESSAGES } from '../constants';
 
 export const validationSchema = yup.object({
