@@ -33,11 +33,10 @@
   display: flex;
 
   &--expanded {
-    align-items: center;
+    @include flex-center;
+
     background-color: var(--color-gray-500);
-    display: flex;
     flex-direction: column;
-    justify-content: center;
     position: fixed;
     text-align: center;
     width: 100%;
@@ -62,7 +61,6 @@
   &__wrapper {
     @include reset-list-style;
 
-    animation: nav-wrapper-in 0.5s ease;
     text-align: center;
     width: inherit;
 
@@ -75,6 +73,10 @@
       margin: 0;
       padding: 0;
     }
+  }
+
+  &--expanded &__wrapper {
+    animation: nav-wrapper-in 0.5s linear;
   }
 
   &__link {
