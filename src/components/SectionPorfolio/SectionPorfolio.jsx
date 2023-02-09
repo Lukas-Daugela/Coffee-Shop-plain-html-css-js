@@ -1,5 +1,6 @@
+import Aos from 'aos';
 import className from 'classnames/bind';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import MyProject from '../MyProject';
 import SectionsHeading from '../SectionsHeading';
@@ -10,6 +11,10 @@ const cn = className.bind(styles);
 
 export default function SectionPorfolio() {
   const numberOfProjects = projectInformation.length;
+
+  useEffect(() => {
+    Aos.init();
+  }, []);
 
   return (
     <div id="portfolio" className={cn('portfolio')}>
@@ -24,7 +29,14 @@ export default function SectionPorfolio() {
           <MyProject key={index} information={information} />
         ))}
       </div>
-      <span className={cn('portfolio__promise')}>And many more to come!</span>
+      <span
+        data-aos="fade-up"
+        data-aos-delay="100"
+        data-aos-once={true}
+        className={cn('portfolio__promise')}
+      >
+        And many more to come!
+      </span>
     </div>
   );
 }
