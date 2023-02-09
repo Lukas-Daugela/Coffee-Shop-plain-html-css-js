@@ -1,7 +1,7 @@
 import className from 'classnames/bind';
 import React from 'react';
 
-import HeroButton from '../HeroButton/HeroButton';
+import HeroButton from '../HeroButton';
 import styles from './Hero.module.scss';
 import HeroImage from './image/hero-image.png';
 import { EmailIcon, GitIcon, LinkedinIcon } from './svg';

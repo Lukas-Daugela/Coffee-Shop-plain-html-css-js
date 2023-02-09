@@ -4,14 +4,14 @@ import React, { useEffect } from 'react';
 
 import { HorizontalLine } from '../../../public/assets/svg';
 import SectionsHeading from '../SectionsHeading';
-import styles from './AboutSection.module.scss';
+import styles from './SectionAbout.module.scss';
 import { text } from './text';
 
 const cn = className.bind(styles);
 
 const { description } = text;
 
-export default function AboutSection() {
+export default function SectionAbout() {
   useEffect(() => {
     Aos.init();
   }, []);
