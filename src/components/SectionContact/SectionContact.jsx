@@ -42,7 +42,12 @@ export default function SectionContact() {
         <div className={cn('contact__form-wrapper')}>
           {!submited && <ContactForm texts={formTexts} />}
           {submited && (
-            <div className={cn('success-message')}>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-once={true}
+              className={cn('success-message')}
+            >
               <h3 className={cn('success-message__gratitude')}>Thank you!</h3>
               <p className={cn('success-message__confirmation')}>
                 Your message has been sent
