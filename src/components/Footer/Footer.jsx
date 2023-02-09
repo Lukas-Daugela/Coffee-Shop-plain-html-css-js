@@ -47,9 +47,9 @@ export default function Footer() {
             </a>
           </li>
           <li className={cn('footer__list-items')}>
-            <a className={cn('footer__links')} href="">
+            <HashLink className={cn('footer__links')} to="#contact" smooth>
               <EmailIcon />
-            </a>
+            </HashLink>
           </li>
         </ul>
         <p className={cn('footer__copyright')}>

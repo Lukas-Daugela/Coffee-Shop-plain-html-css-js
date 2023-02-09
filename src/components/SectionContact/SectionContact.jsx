@@ -1,5 +1,6 @@
+import Aos from 'aos';
 import className from 'classnames/bind';
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useState } from 'react';
 
 import { HorizontalLine } from '../../../public/assets/svg';
@@ -14,10 +15,19 @@ const cn = className.bind(styles);
 export default function SectionContact() {
   const [submited, setSubmited] = useState(false);
 
+  useEffect(() => {
+    Aos.init();
+  }, []);
+
   return (
     <div id="contact" className={cn('contact')}>
       <SectionsHeading>contact</SectionsHeading>
-      <p className={cn('contact__description')}>
+      <p
+        data-aos="fade-left"
+        data-aos-delay="100"
+        data-aos-once={true}
+        className={cn('contact__description')}
+      >
         I’m always up for new connections, you can contact me by submiting this contact
         form or via social media.
       </p>
@@ -32,7 +42,12 @@ export default function SectionContact() {
         <div className={cn('contact__form-wrapper')}>
           {!submited && <ContactForm texts={formTexts} />}
           {submited && (
-            <div className={cn('success-message')}>
+            <div
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-once={true}
+              className={cn('success-message')}
+            >
               <h3 className={cn('success-message__gratitude')}>Thank you!</h3>
               <p className={cn('success-message__confirmation')}>
                 Your message has been sent

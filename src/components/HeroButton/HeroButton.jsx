@@ -9,6 +9,7 @@ const cn = className.bind(styles);
 
 export default function HeroButton({ children, hashLink, link }) {
   let button;
+
   if (hashLink) {
     button = (
       <HashLink to={hashLink} smooth>
