@@ -2,6 +2,7 @@
 
 .project {
   position: relative;
+  width: 100%;
 
   @include media-query('xxl') {
     height: 40rem;
@@ -10,7 +11,7 @@
 
   &__image {
     height: 100%;
-    object-fit: cover;
+    position: relative;
     width: 100%;
   }
 

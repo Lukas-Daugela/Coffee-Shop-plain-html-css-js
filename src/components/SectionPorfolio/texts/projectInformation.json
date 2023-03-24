@@ -1,6 +1,7 @@
 [
   {
     "thumbnail": "assets/images/sourcery-academy-thumbnail.jpg",
+    "blurhash": "UHSPX~?akBIX~pM{j?xu_1M}RjxtM~%La|IU",
     "role": "coded and designed",
     "title": "Sourcery Academy",
     "description": "Sourcery Academy website",
@@ -9,6 +10,7 @@
   },
   {
     "thumbnail": "assets/images/weather-app-thumbnail.jpg",
+    "blurhash": "UFE3rkMHIpR:.AjER+WYo#WXaeoIb{R-n$xC",
     "role": "coded and designed",
     "title": "Weather App",
     "description": "Weather App website",
@@ -17,6 +19,7 @@
   },
   {
     "thumbnail": "assets/images/data-fetchint-thumbnail.jpg",
+    "blurhash": "UlG^vo??Mz%dx@tPoeoeICoetPWCo{oef7ay",
     "role": "coded and designed",
     "title": "Countries Data ",
     "description": "Data fetching and filtering website",

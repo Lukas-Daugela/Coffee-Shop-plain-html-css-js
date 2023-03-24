@@ -13,11 +13,18 @@
   }
 
   &__projects {
+    display: grid;
+    grid-auto-rows: 21rem;
+    max-width: 40rem;
+    width: 100%;
+
     @include media-query('md') {
-      display: grid;
-      grid-auto-rows: 40rem;
+      grid-auto-rows: 30rem;
       margin: 0 auto;
       max-width: 64rem;
+    }
+    @include media-query('lg') {
+      grid-auto-rows: 40rem;
     }
   }
 
