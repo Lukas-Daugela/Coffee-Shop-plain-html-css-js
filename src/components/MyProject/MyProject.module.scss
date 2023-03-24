@@ -3,6 +3,11 @@
 .project {
   position: relative;
 
+  @include media-query('xxl') {
+    height: 40rem;
+    width: 33.33%;
+  }
+
   &__image {
     height: 100%;
     object-fit: cover;

@@ -14,5 +14,13 @@
     "description": "Weather App website",
     "demoUrl": "https://react-vite-weather-app-fawn.vercel.app/",
     "repositoryUrl": "https://github.com/Lukas-Daugela/React-Vite-Weather-app"
+  },
+  {
+    "thumbnail": "assets/images/data-fetchint-thumbnail.jpg",
+    "role": "coded and designed",
+    "title": "Countries Data ",
+    "description": "Data fetching and filtering website",
+    "demoUrl": "https://react-vite-data-fetching.vercel.app/",
+    "repositoryUrl": "https://github.com/Lukas-Daugela/React-Vite-Data-Fetching"
   }
 ]
