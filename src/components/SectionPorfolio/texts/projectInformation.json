@@ -1,6 +1,6 @@
 [
   {
-    "illustration": "assets/images/sourcery-project.jpg",
+    "thumbnail": "assets/images/sourcery-academy-thumbnail.jpg",
     "role": "coded and designed",
     "title": "Sourcery Academy",
     "description": "Sourcery Academy website",
@@ -8,7 +8,7 @@
     "repositoryUrl": "https://github.com/Lukas-Daugela/Sourcery-project"
   },
   {
-    "illustration": "assets/images/weatherAppProject.PNG",
+    "thumbnail": "assets/images/weather-app-thumbnail.jpg",
     "role": "coded and designed",
     "title": "Weather App",
     "description": "Weather App website",

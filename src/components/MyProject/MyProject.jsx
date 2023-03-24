@@ -8,11 +8,11 @@ import styles from './MyProject.module.scss';
 const cn = className.bind(styles);
 
 export default function MyProject({ information }) {
-  const { illustration, role, title, description, demoUrl, repositoryUrl } = information;
+  const { thumbnail, role, title, description, demoUrl, repositoryUrl } = information;
 
   return (
     <div className={cn('project')}>
-      <img className={cn('project__image')} src={illustration} alt="" />
+      <img className={cn('project__image')} src={thumbnail} alt="" />
       <div className={cn('project__features')}>
         <span className={cn('project__role')}>{role}</span>
         <h3 className={cn('project__title')}>{title}</h3>
