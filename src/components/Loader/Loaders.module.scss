@@ -1,7 +1,7 @@
 @import '../../sass/mixins/index';
 
 .loader__container {
-  background: #7f7f7f36;
+  background: #00000036;
   display: flex;
   height: 100%;
   left: 0;
@@ -14,7 +14,7 @@
   animation: rotation 1s linear infinite;
   border-radius: 50%;
   border-right: 3px solid transparent;
-  border-top: 3px solid #fff;
+  border-top: 3px solid var(--color-primary);
   box-sizing: border-box;
   display: inline-block;
   height: 48px;
