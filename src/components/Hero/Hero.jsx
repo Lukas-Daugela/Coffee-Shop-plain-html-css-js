@@ -12,7 +12,7 @@ const cn = className.bind(styles);
 
 export default function Hero() {
   const [isLoaded, setLoaded] = useState(false);
-  const [isLoadStarted, setLoadStarted] = useState(true);
+  const [isLoadStarted, setLoadStarted] = useState(false);
 
   const handleLoad = () => {
     setLoaded(true);
