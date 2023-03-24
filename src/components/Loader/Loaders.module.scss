@@ -1,0 +1,36 @@
+@import '../../sass/mixins/index';
+
+.loader__container {
+  background: #00000036;
+  height: 100%;
+  width: 100%;
+  @include flex-center;
+
+  &--absolute {
+    left: 0;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.loader__animation {
+  animation: rotation 1s linear infinite;
+  border-radius: 50%;
+  border-right: 3px solid transparent;
+  border-top: 3px solid var(--color-primary);
+  box-sizing: border-box;
+  display: inline-block;
+  height: 48px;
+  margin: auto;
+  width: 48px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

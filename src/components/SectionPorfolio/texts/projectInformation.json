@@ -1,6 +1,7 @@
 [
   {
-    "illustration": "assets/images/sourcery-project.jpg",
+    "thumbnail": "assets/images/sourcery-academy-thumbnail.jpg",
+    "blurhash": "UESigT?a%LN1_3WBWCt7~oM|IV-.xvt7ofM{",
     "role": "coded and designed",
     "title": "Sourcery Academy",
     "description": "Sourcery Academy website",
@@ -8,11 +9,30 @@
     "repositoryUrl": "https://github.com/Lukas-Daugela/Sourcery-project"
   },
   {
-    "illustration": "assets/images/weatherAppProject.PNG",
+    "thumbnail": "assets/images/weather-app-thumbnail.jpg",
+    "blurhash": "UMDTVjHqNHWB%%aJofazozf6ayfktSaeWBj?",
     "role": "coded and designed",
     "title": "Weather App",
     "description": "Weather App website",
     "demoUrl": "https://react-vite-weather-app-fawn.vercel.app/",
     "repositoryUrl": "https://github.com/Lukas-Daugela/React-Vite-Weather-app"
+  },
+  {
+    "thumbnail": "assets/images/data-fetchint-thumbnail.jpg",
+    "blurhash": "UlG^vo??Mz%dx@tPoeoeICoetPWCo{oef7ay",
+    "role": "coded and designed",
+    "title": "Countries Data",
+    "description": "Data fetching and filtering website",
+    "demoUrl": "https://react-vite-data-fetching.vercel.app/",
+    "repositoryUrl": "https://github.com/Lukas-Daugela/React-Vite-Data-Fetching"
+  },
+  {
+    "thumbnail": "assets/images/interno-thumbnail.jpg",
+    "blurhash": "UJP%Ff%h-=D$~qxuRjWV?bt7IUxv.8RPofof",
+    "role": "coded and designed",
+    "title": "Interno",
+    "description": "Interior design company website",
+    "demoUrl": "https://react-vite-interno.vercel.app/",
+    "repositoryUrl": "https://github.com/Lukas-Daugela/React-Vite-Interno"
   }
 ]

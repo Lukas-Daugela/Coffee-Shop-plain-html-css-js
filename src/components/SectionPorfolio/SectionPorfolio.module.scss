@@ -13,19 +13,32 @@
   }
 
   &__projects {
+    display: grid;
+    grid-auto-rows: 21rem;
+    max-width: 40rem;
+    width: 100%;
+
     @include media-query('md') {
-      display: grid;
-      gap: 3rem;
-      grid-auto-rows: 40rem;
+      grid-auto-rows: 30rem;
       margin: 0 auto;
       max-width: 64rem;
+    }
+    @include media-query('lg') {
+      grid-auto-rows: 40rem;
     }
   }
 
   &__multiple-projects {
     @include media-query('xl') {
+      gap: 2rem;
       grid-template-columns: repeat(2, 1fr);
-      max-width: 110rem;
+      max-width: 100%;
+    }
+    @include media-query('xxl') {
+      flex-wrap: wrap;
+      gap: unset;
+      max-width: 1920px;
+      @include flex-center;
     }
   }
 
@@ -34,6 +47,6 @@
     font-family: var(--font-family-tertiary);
     font-size: 1.6rem;
     font-weight: 600;
-    margin-top: 2.3rem;
+    margin-top: 5rem;
   }
 }

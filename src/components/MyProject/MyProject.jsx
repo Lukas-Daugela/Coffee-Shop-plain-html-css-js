@@ -3,16 +3,22 @@ import PropTypes from 'prop-types';
 import React from 'react';
 
 import Button from '../Button';
+import CustomLazyLoadImage from '../CustomLazyLoadImage';
 import styles from './MyProject.module.scss';
 
 const cn = className.bind(styles);
 
 export default function MyProject({ information }) {
-  const { illustration, role, title, description, demoUrl, repositoryUrl } = information;
+  const { thumbnail, blurhash, role, title, description, demoUrl, repositoryUrl } =
+    information;
 
   return (
     <div className={cn('project')}>
-      <img className={cn('project__image')} src={illustration} alt="" />
+      <CustomLazyLoadImage
+        blurhash={blurhash}
+        imgUrl={thumbnail}
+        containerClass={cn('project__image')}
+      />
       <div className={cn('project__features')}>
         <span className={cn('project__role')}>{role}</span>
         <h3 className={cn('project__title')}>{title}</h3>
