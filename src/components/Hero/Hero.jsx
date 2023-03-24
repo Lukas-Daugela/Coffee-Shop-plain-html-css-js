@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import HeroButton from '../HeroButton';
+import Loader from '../Loader/Loader';
 import styles from './Hero.module.scss';
 import HeroImage from './image/hero-image.png';
 import { EmailIcon, GitIcon, LinkedinIcon } from './svg';
@@ -30,7 +31,7 @@ export default function Hero() {
           beforeLoad={handleLoadStarted}
           className={cn('hero__image')}
         />
-        {!isLoaded && isLoadStarted && <div className={cn('hero__loader')}>Loader</div>}
+        {!isLoaded && isLoadStarted && <Loader animationClassName={cn('hero__loader')} />}
       </div>
       <div className={cn('hero__text-wrapper')}>
         <div className={cn('hero__text')}>

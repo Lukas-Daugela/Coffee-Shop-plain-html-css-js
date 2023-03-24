@@ -9,7 +9,7 @@ const App = lazy(() => import('./App'));
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Suspense fallback={<Loader />}>
+    <Suspense fallback={<Loader positionAbsolute />}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
