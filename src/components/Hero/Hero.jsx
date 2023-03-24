@@ -1,5 +1,6 @@
 import className from 'classnames/bind';
-import React from 'react';
+import React, { useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import HeroButton from '../HeroButton';
 import styles from './Hero.module.scss';
@@ -9,9 +10,28 @@ import { EmailIcon, GitIcon, LinkedinIcon } from './svg';
 const cn = className.bind(styles);
 
 export default function Hero() {
+  const [isLoaded, setLoaded] = useState(false);
+  const [isLoadStarted, setLoadStarted] = useState(true);
+
+  const handleLoad = () => {
+    setLoaded(true);
+  };
+
+  const handleLoadStarted = () => {
+    setLoadStarted(true);
+  };
+
   return (
     <div className={cn('hero')}>
-      <img className={cn('hero__image')} src={HeroImage} alt="" />
+      <div className={cn('hero__image-container')}>
+        <LazyLoadImage
+          src={HeroImage}
+          onLoad={handleLoad}
+          beforeLoad={handleLoadStarted}
+          className={cn('hero__image')}
+        />
+        {!isLoaded && isLoadStarted && <div className={cn('hero__loader')}>Loader</div>}
+      </div>
       <div className={cn('hero__text-wrapper')}>
         <div className={cn('hero__text')}>
           <p className={cn('text__greeting')}>Hi, I am</p>

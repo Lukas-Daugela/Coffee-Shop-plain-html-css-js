@@ -10,26 +10,42 @@
   @include media-query('md') {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    overflow: hidden;
+  }
+
+  &__image-container {
+    align-items: end;
+    display: flex;
+    height: 100%;
+    position: relative;
+    width: 100%;
+
+    @include media-query('md') {
+      grid-column: 2 / -1;
+      position: static;
+    }
+  }
+
+  &__loader {
+    height: 100%;
+    width: 100%;
   }
 
   &__image {
-    bottom: 0;
     height: 90%;
     object-fit: cover;
-    position: absolute;
 
     @include media-query('md') {
-      right: -19rem;
-    }
-    @include media-query('lg') {
-      grid-column: 2 / -1;
-      margin-top: auto;
-      position: static;
+      bottom: 0;
+      left: 25%;
+      position: absolute;
     }
 
+    @include media-query('lg') {
+      position: static;
+    }
     @include media-query('xxl') {
-      padding-right: 20rem;
+      transform: translateX(-15%);
+      width: 90%;
     }
   }
 
